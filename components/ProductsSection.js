@@ -12,7 +12,7 @@ const ProductsSection = () => {
                 descripcion deasdsadas lorem+3
             </p>
         </div>
-        <div className="mx-auto lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">
+        <div className="mx-auto lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-2">
             <ProductCard />
             <ProductCard />
             <ProductCard />

@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import '../styles/styles.css';
+import "../styles/nav.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 
 function MyApp({ Component, pageProps }) {
