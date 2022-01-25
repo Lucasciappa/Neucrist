@@ -10,11 +10,15 @@ module.exports = {
       colors: {
         'primary': {
           'red': '#C22C0D',
+          'red-hover': '#61050A',
           'yellow': '·F7C700',
           'black': '#333333',
           'white': '#FFFFFF',
           'input': '#FFF7F4',
-          'home': '#F3D0C1'
+          'home': '#F3D0C1',
+          gray: "#636363",
+          "gray-light": "#EDEDED",
+          brown: "#953F3F",
         },
         'text': {
           'primary': '#222222',

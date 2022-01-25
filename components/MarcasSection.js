@@ -19,10 +19,10 @@ const MarcasSection = () => {
 
   return (
     <>
-      <h3 className="text-center text-primary-black font-semibold font-primary py-8 text-2xl md:text-4xl ">
+      <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-medium py-6">
         Marcas que nos avalan
-      </h3>
-      <div className="h-60 w-full grid grid-cols-3 px-4 gap-6 md:grid-cols-4 mb-10">
+      </h5>
+      <div className="h-60 w-full grid grid-cols-3 px-16 gap-6 md:grid-cols-4 mb-20">
         {infoMarcas.map((data) => {
           return (
             <Image

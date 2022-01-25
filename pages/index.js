@@ -1,6 +1,8 @@
 import Header from '../components/Header';
+import HeroImage from '../components/home/HeroImage';
 import Layout from '../components/Layout';
 import MarcasSection from '../components/MarcasSection';
+import ProductsSection from '../components/ProductsSection';
 
 const index = () => {
     return (
@@ -8,10 +10,17 @@ const index = () => {
             <Header />
 
             <Layout>
-                <div className="2x1:container bg-primary-white font-primary text-center h-screen w-full">
-                    <h1>Index page</h1>
+                <div className="2x1:container bg-white font-primary">
+                    <HeroImage />
+                    <div className="mx-auto py-10 max-w-7xl 2lg:px-8">
+                        <ProductsSection />
+                        <MarcasSection />
+                        {/* {cardsWithImg.map((data, i) => {
+              return <CardWithImg key={i} {...data} />;
+            })} */}
+                    </div>
+
                 </div>
-                <MarcasSection />
             </Layout>
         </>
     )

@@ -6,7 +6,7 @@ const InfoLinks = () => {
     <>
       <div className="w-full lg:w-6/12 p-4">
         <div className="flex flex-col mb-6 lg:flex-row">
-          <div className="w-full lg:w-8/12 xl:w-5/12 px-4 ml-auto">
+          <div className="w-full lg:w-8/12 xl:w-6/12 px-4 ml-auto">
             <span className="block uppercase text-gray-300 text-md font-semibold mb-2">
               Información importante
             </span>
