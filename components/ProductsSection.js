@@ -26,13 +26,11 @@ const ProductsSection = () => {
                     return <CardResidence key={i} {...data} />;
                 })} */}
         </div>
-        <div className="lg:pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">
-            <ProductCard />
-
-            {/* {nursingHomes.map((data, i) => {
+        {/* <div className="lg:pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">          
+            {nursingHomes.map((data, i) => {
                     return <CardResidence key={i} {...data} />;
-                })} */}
-        </div>
+                })}
+        </div> */}
     </section>)
 };
 

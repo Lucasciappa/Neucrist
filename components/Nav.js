@@ -48,51 +48,52 @@ const Nav = () => {
               </span>
             </div>
           </div>
-        {/* <!-- Responsive navbar --> */}
-        <div className="flex-none lg:hidden">
-          <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
-          <label htmlFor="abrir-cerrar" className="toggle-button" />
-          <div className="bg-primary-gray-light w-full h-60 mt-6 absolute z-50 left-0 hamburguer">
-            <div className="m-12 text-center">
-              <Link href="/sobre-nosotros">
-                <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
-                Home
-                </p>
-              </Link>
-              <Link href="/ventajas">
-                <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
-                Quienes Somos
-                </p>
-              </Link>
-              <Link href="https://gransliving.com/blog/">
-                <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
-                Contacto
-                </p>
-              </Link>
-              <Link href="/contacto">
-                <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
-                Contacto
-                </p>
-              </Link>
+          {/* <!-- Responsive navbar --> */}
+          <div className="flex-none lg:hidden">
+            <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
+            <label htmlFor="abrir-cerrar" className="toggle-button" />
+            <div className="bg-primary-gray-light w-full h-60 mt-6 absolute z-50 left-0 hamburguer">
+              <div className="m-12 text-center">
+                <Link href="/sobre-nosotros">
+                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                    Home
+                  </p>
+                </Link>
+                <Link href="/ventajas">
+                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                    Quienes Somos
+                  </p>
+                </Link>
+                <Link href="https://gransliving.com/blog/">
+                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                    Contacto
+                  </p>
+                </Link>
+                <Link href="/contacto">
+                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                    Contacto
+                  </p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        </div>
       </nav>
-      {/* <!-- Does this resource worth a follow? --> */}
       <div className="fixed bottom-0 right-0 mb-4 mr-4 z-10">
         <div>
           <a
-            title="Follow me on twitter"
+            title="Mandanos un mensaje"
+            //todo
             href="https://www.twitter.com/asad_codes"
             target="_blank"
-            className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
+            className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 relative"
           >
-            <i class="fab fa-whatsapp object-cover object-center w-full h-full rounded-full"></i>
-            {/* <img
-              className="object-cover object-center w-full h-full rounded-full"
-              src="https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2019/12/twitter-logo.jpg"
-            /> */}
+            <Image
+              src="/images/pngwing.com.png"
+              alt="logo WhatsApp"
+              layout="fill"
+              objectFit="cover"
+            />
           </a>
         </div>
       </div>
