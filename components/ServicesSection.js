@@ -29,8 +29,8 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
         <div className="px-3">
             <h3 className="text-primary-red text-center leading-none text-3xl py-4 font-semibold">
             Servicios que brindamos
@@ -42,7 +42,7 @@ const ServicesSection = () => {
             haven't heard of them man bun deep jianbing selfies heirloom.
             </p>
         </div>
-        <div class="flex flex-wrap -m-4 xl:px-40">
+        <div className="flex flex-wrap -m-4 xl:px-40">
             {infoCards.map((data, i) => {
             return <ServiceCard key={i} {...data} />;
           })}

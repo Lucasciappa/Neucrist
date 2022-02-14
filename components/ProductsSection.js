@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import SeeMoreBtn from './SeeMoreBtn';
 
 const ProductsSection = () => {
     return (<section className="flex flex-col justify-center mx-2 py-6 xl:mx-6">
@@ -19,13 +20,11 @@ const ProductsSection = () => {
             <ProductCard />
             <ProductCard />
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
             {/* {nursingHomes.map((data, i) => {
                     return <CardResidence key={i} {...data} />;
                 })} */}
         </div>
+        <SeeMoreBtn/>
         {/* <div className="lg:pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">          
             {nursingHomes.map((data, i) => {
                     return <CardResidence key={i} {...data} />;

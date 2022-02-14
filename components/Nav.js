@@ -31,10 +31,10 @@ const Nav = () => {
                 <Link href="/about">
                   <a className="hover:text-pink-800">Quienes Somos</a>
                 </Link>
-                <DropDown />
                 <Link href="/contacto">
                   <a className="hover:text-pink-800">Contacto</a>
                 </Link>
+                <DropDown />
               </ul>
             </div>
             <div className="hidden lg:block md:px-16">
@@ -42,7 +42,7 @@ const Nav = () => {
                 <Link href="tel:+34644318219">
                   <a className="flex items-center text-primary-red font-semibold hover:text-pink-800 outline-none ease-linear transition-all duration-100">
                     <i className="fas fa-phone-alt w-5 mr-2"></i>
-                    <p className="text-lg">644 318 219</p>
+                    <p className="text-lg">011 53123213</p>
                   </a>
                 </Link>
               </span>
@@ -64,16 +64,12 @@ const Nav = () => {
                     Quienes Somos
                   </p>
                 </Link>
-                <Link href="https://gransliving.com/blog/">
-                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
-                    Contacto
-                  </p>
-                </Link>
                 <Link href="/contacto">
                   <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
                     Contacto
                   </p>
                 </Link>
+                <DropDown />
               </div>
             </div>
           </div>
@@ -84,7 +80,7 @@ const Nav = () => {
           <a
             title="Mandanos un mensaje"
             //todo
-            href="https://www.twitter.com/asad_codes"
+            href="https://api.whatsapp.com/send/?phone=01131063791&text=Hola+GransLiving%21%0D%0A%0D%0AQuiero+saber+mas+informaci%C3%B3n+sobre+-+https%3A%2F%2Fgransliving.com%2F&app_absent=0"
             target="_blank"
             className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 relative"
           >
