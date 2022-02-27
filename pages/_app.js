@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
                 <link rel="icon" type="image/png" href="../public/images/favicon.ico"/>
             </Head>
             <Component {...pageProps} />
+            
         </>
     )
 }

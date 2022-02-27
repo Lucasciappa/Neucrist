@@ -3,20 +3,20 @@ import SocialMediaCircle from "./FooterSocialMedia";
 const FollowUs = () => {
     const infoCards = [
         {
-          fontAwesome: "flex fab fa-twitter",
-          color: "text-blue-400"
+          fontAwesome: "fab fa-instagram",
+          link: "https://www.instagram.com/gransliving/",
         },
         {
-          fontAwesome: "flex fab fa-facebook-square",
-          color: "text-blue-600"
+          fontAwesome: "fab fa-facebook-f",
+          link: "https://www.facebook.com/gransliving"
         },
         {
-          fontAwesome: "flex fab fa-dribbble",
-          color: "text-pink-400"
+          fontAwesome: "fab fa-twitter",
+          link: ""
         },
         {
-          fontAwesome: "flex fab fa-github",
-          color: "text-gray-900"
+          fontAwesome: "fab fa-github",
+          link: ""
         }
       ];
   return (
@@ -25,7 +25,7 @@ const FollowUs = () => {
         <h4 className="text-3xl py-4 font-semibold">
           Seguinos en nuestras redes
         </h4>
-        <div className="py-2">
+        <div className="flex flex-row justify-center gap-x-8 py-2">
         {infoCards.map((data, i) => {
             return <SocialMediaCircle key={i} {...data} />;
           })}

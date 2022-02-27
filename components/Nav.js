@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="flex justify-between bg-white text-primary-red w-full">
+      <nav className="flex justify-between bg-white text-primary-red font-primary w-full">
         <div className="px-5 xl:px-12 py-3 flex flex-row justify-between w-full items-center">
           {/* <a className="text-3xl font-bold font-heading" href="#">
                         <Image
@@ -23,16 +23,16 @@ const Nav = () => {
           </Link>
           {/* <!-- Nav Links --> */}
           <div className="flex flex-row justify-between items-center">
-            <div className="hidden lg:block font-semibold leading-5">
+            <div className="hidden text-lg lg:block font-semibold leading-5">
               <ul className="px-4 space-x-8">
                 <Link href="/">
-                  <a className="hover:text-pink-800">Home</a>
+                  <a>Home</a>
                 </Link>
                 <Link href="/about">
-                  <a className="hover:text-pink-800">Quienes Somos</a>
+                  <a>Quienes Somos</a>
                 </Link>
                 <Link href="/contacto">
-                  <a className="hover:text-pink-800">Contacto</a>
+                  <a>Contacto</a>
                 </Link>
                 <DropDown />
               </ul>
@@ -52,20 +52,20 @@ const Nav = () => {
           <div className="flex-none lg:hidden">
             <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
             <label htmlFor="abrir-cerrar" className="toggle-button" />
-            <div className="bg-primary-gray-light w-full h-60 mt-6 absolute z-50 left-0 hamburguer">
-              <div className="m-12 text-center">
-                <Link href="/sobre-nosotros">
-                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+            <div className="bg-primary-gray-light w-full h-72 mt-6 absolute z-50 left-0 hamburguer">
+              <div className="my-10 text-center">
+                <Link href="/">
+                  <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                     Home
                   </p>
                 </Link>
-                <Link href="/ventajas">
-                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                <Link href="/about">
+                  <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                     Quienes Somos
                   </p>
                 </Link>
                 <Link href="/contacto">
-                  <p className="mb-2 font-primary text-xl cursor-pointer font-semibold hover:text-primary-black">
+                  <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                     Contacto
                   </p>
                 </Link>

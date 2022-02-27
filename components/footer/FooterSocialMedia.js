@@ -1,13 +1,10 @@
 import React from "react";
 
-const SocialMediaCircle = ({fontAwesome, color}) => {
+const SocialMediaCircle = ({fontAwesome, link}) => {
   return (
-    <button
-      className={`bg-white ${color} shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3`}
-      type="button"
-    >
-      <i className={fontAwesome}></i>
-    </button>
+      <a href={link} target="_blank" rel="noreferrer">
+        <span className={`${fontAwesome} iconSocialMediaFooter`}></span>
+      </a>
   );
 };
 
