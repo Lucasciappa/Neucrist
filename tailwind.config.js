@@ -20,6 +20,13 @@ module.exports = {
           "gray-light": "#EDEDED",
           brown: "#953F3F",
         },
+        backgroundImage: {
+          "about": "url('/images/productos/neumaticos2.jpg')"
+        },
+        height: {
+          '192': '48rem',
+          '288': '72rem'
+        },
         'text': {
           'primary': '#222222',
           'secundary': '#767676',
