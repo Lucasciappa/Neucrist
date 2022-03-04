@@ -5,7 +5,7 @@ const HeroImage = () => {
     return (
       <div
         className="relative flex content-center items-center justify-center font-primary"
-        style={{ minHeight: "30rem" }}
+        style={{ minHeight: "40rem" }}
       >
         <div
           className="absolute top-0 w-full h-full bg-center bg-cover"
