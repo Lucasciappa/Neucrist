@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import profilePic from "../public/images/logo-neucrist.PNG";
+import profilePic from "../public/images/logo-neucrist.svg";
 import { useRouter } from "next/dist/client/router";
 import DropDown from "./DropDown";
 
@@ -8,8 +8,8 @@ const Nav = () => {
   const router = useRouter();
 
   return (
-    <>
-      <nav className="flex justify-between bg-white text-primary-red font-primary w-full">
+    <header className="z-50 bg-gray-700 w-full font-primary sticky top-0">
+      <nav className="flex justify-between font-primary">
         <div className="px-5 xl:px-12 py-3 flex flex-row justify-between w-full items-center">
           {/* <a className="text-3xl font-bold font-heading" href="#">
                         <Image
@@ -21,9 +21,10 @@ const Nav = () => {
               <Image src={profilePic} alt="Neucrist Logo Picture" />
             </a>
           </Link>
+
           {/* <!-- Nav Links --> */}
           <div className="flex flex-row justify-between items-center">
-            <div className="hidden text-lg lg:block font-semibold leading-5">
+            <div className="hidden text-lg lg:block text-primary-red font-semibold leading-5">
               <ul className="px-4 space-x-8">
                 <Link href="/">
                   <a>Home</a>
@@ -69,7 +70,9 @@ const Nav = () => {
                     Contacto
                   </p>
                 </Link>
-                <DropDown />
+                <p className="cursor-pointer w-full hover:bg-gray-300 ml-2">
+                  <DropDown />
+                </p>
               </div>
             </div>
           </div>
@@ -93,7 +96,7 @@ const Nav = () => {
           </a>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 

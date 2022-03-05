@@ -3,9 +3,9 @@ import Link from "next/link";
 const DropDown = () => {
   return (
     <>
-      <div className="group md:inline-block flex justify-center mb-2 md:m-0 md:z-50 w-full md:w-20 py-3 hover:bg-gray-300 md:hover:bg-white">
+      <div className="group md:inline-block flex justify-center mb-2 md:m-0 md:z-50 w-full md:w-20 py-3 hover:bg-gray-300 lg:hover:bg-gray-700">
         <button className="outline-none focus:outline-none rounded-sm flex items-center min-w-16">
-          <span className="pr-1 md:text-lg flex-1 font-semibold font-primary text-xl">Productos</span>
+          <span className="pr-1 text-xl lg:text-lg flex-1 font-semibold font-primary">Productos</span>
           <span>
             <svg
               className="fill-current h-4 w-4 transform group-hover:-rotate-180
@@ -18,7 +18,7 @@ const DropDown = () => {
           </span>
         </button>
         <ul
-          className="bg-primary-gray-light md:bg-white ml-40 mt-6 md:ml-10 md:mt-0 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+          className="bg-primary-gray-light md:bg-white ml-40 mt-8 md:ml-10 md:mt-0 border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top min-w-32 z-40"
         >
           <div className="flex flex-col ">
