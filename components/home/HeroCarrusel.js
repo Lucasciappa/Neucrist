@@ -1,75 +1,65 @@
 import React from "react";
-const d = document;
+import { Slide } from 'react-slideshow-image';
+import Button from '../Button';
+// const d = document;
 
+const slideImages = [
+  '/images/fotos/neumaticos.jpg',
+  '/images/fotos/neumaticos.jpg',
+  '/images/fotos/automobile-special-workers-glazier-replacing-windscreen-windshield-of-picture-id1073249578.jpg'
+];
 
-
-const HeroCarrusel = () => {
-
-  const $nextBtn = d.querySelector(".slider-btns .next"),
-  $prevBtn = d.querySelector(".slider-btns .prev"),
-  $slides = d.querySelectorAll(".slider-slide");
-
- let i = 0;
- d.addEventListener("click", e => {
-     if(e.target === $prevBtn){
-         e.preventDefault();
-         $slides[i].classList.remove("active");
-         i--;
-    
-         if(i < 0){
-             i = $slides.length -1;
-         }
-         $slides[i].classList.add("active");
-
-     }
-     if(e.target === $nextBtn){
-         e.preventDefault();
-         $slides[i].classList.remove("active");
-         i++;
-    
-         if(i > $slides.length -1){
-             i = 0;
-         }
-         $slides[i].classList.add("active");
-
-     }
- })
-
-
-  return (
-    <section id="section12" class="section" data-scroll-spy>
-    <div class="slider">
-    <div class="slider-slides">
-      <div class="slider-slide active">
-        <img src="https://placeimg.com/400/400/animals" alt="animals" />
-      </div>
-      <div class="slider-slide">
-        <img src="https://placeimg.com/400/400/tech" alt="tech" />
-      </div>
-      <div class="slider-slide">
-        <h4>Diapositiva 1</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus, labore provident saepe magni illo deserunt quia, earum, nisi commodi odio veritatis officiis. Quae alias assumenda aliquam aut eveniet expedita.
-        </p>
-      </div>
-      <div class="slider-slide">
-        <img src="https://placeimg.com/400/400/architecture" alt="architecture" />
-      </div>
-      <div class="slider-slide">
-        <h4>Diapositiva 2</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellendus, labore provident saepe magni illo deserunt quia, earum, nisi commodi odio veritatis officiis. Quae alias assumenda aliquam aut eveniet expedita.
-        </p>
-      </div>
-    </div>
-      <div class="slider-btns">
-         <a class="prev" href="#">&laquo;</a>
-         <a class="next" href="#">&raquo;</a>
-      </div>
-  </div>
-  </section>
-  );
+const props = {
+  'canSwipe': false,
+  'arrows': false
 };
 
+const HeroCarrusel = () => {
+    return (
+      <div>
+        <Slide  easing="ease" {...props} >
+          <div className="each-slide">
+          <div className="absolute inset-0 bg-black bg-opacity-10 transition duration-300 ease-in-out"></div>
+            <div className="flex flex-col justify-evenly w-full px-4 mx-auto text-center" style={{'backgroundImage': `url(${slideImages[0]})`}}>
+              <span className="-mt-28 p-2 text-6xl font-bold text-primary-red bg-transparent items-center z-10">Bienvenidos a Neucrist</span>
+              <div className="text-gray-300 mt-4 z-10 cursor-pointer">
+                <Button
+                  link="https://api.whatsapp.com/send/?phone=01131063791&text=Hola+GransLiving%21%0D%0A%0D%0AQuiero+saber+mas+informaci%C3%B3n+sobre+-+https%3A%2F%2Fgransliving.com%2F&app_absent=0"
+                  title="Contactanos"
+                  background="bg-primary-red"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="each-slide">
+          <div className="absolute inset-0 bg-black bg-opacity-10 transition duration-300 ease-in-out"></div>
+            <div className="flex flex-col justify-evenly w-full px-4 mx-auto text-center" style={{'backgroundImage': `url(${slideImages[1]})`}}>
+              <span className="-mt-28 p-2 text-6xl font-bold text-primary-red bg-transparent items-center z-10">Bienvenidos a Neucrist</span>
+              <div className="text-gray-300 mt-4 z-10 cursor-pointer">
+                <Button
+                  link="https://api.whatsapp.com/send/?phone=01131063791&text=Hola+GransLiving%21%0D%0A%0D%0AQuiero+saber+mas+informaci%C3%B3n+sobre+-+https%3A%2F%2Fgransliving.com%2F&app_absent=0"
+                  title="Contactanos"
+                  background="bg-primary-red"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="each-slide">
+          <div className="absolute inset-0 bg-black bg-opacity-10 transition duration-300 ease-in-out"></div>
+            <div className="flex flex-col justify-evenly w-full px-4 mx-auto text-center" style={{'backgroundImage': `url(${slideImages[2]})`}}>
+              <span className="-mt-28 p-2 text-6xl font-bold text-primary-red bg-transparent items-center z-10">Bienvenidos a Neucrist</span>
+              <div className="text-gray-300 mt-4 z-10 cursor-pointer">
+                <Button
+                  link="https://api.whatsapp.com/send/?phone=01131063791&text=Hola+GransLiving%21%0D%0A%0D%0AQuiero+saber+mas+informaci%C3%B3n+sobre+-+https%3A%2F%2Fgransliving.com%2F&app_absent=0"
+                  title="Contactanos"
+                  background="bg-primary-red"
+                />
+              </div>
+            </div>
+          </div>
+        </Slide>
+      </div>
+    )
+};
 
 export default HeroCarrusel;

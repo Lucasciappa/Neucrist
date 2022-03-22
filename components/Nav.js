@@ -8,7 +8,7 @@ const Nav = () => {
   const router = useRouter();
 
   return (
-    <header className="z-50 bg-gray-700 w-full font-primary sticky top-0">
+    <header className="z-50 bg-gray-600 w-full font-primary sticky top-0">
       <nav className="flex justify-between font-primary">
         <div className="px-5 xl:px-12 py-3 flex flex-row justify-between w-full items-center">
           {/* <a className="text-3xl font-bold font-heading" href="#">

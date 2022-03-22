@@ -5,7 +5,7 @@ import { DOMAIN } from "../config";
 
 const Header = () => {
 
-  const title = "Neurocrist";
+  const title = "Neucrist";
   const desc = "Los mejores neumaticos que puedes encontrar en el mercado";
   const ogImgRelativePath = "/og.png";
 
@@ -23,7 +23,7 @@ const Header = () => {
       canonical={pageURL}
       openGraph={{
         type: "website",
-        locale: "en_US", //  Default is en_US
+        locale: "es_AR", //  Default is en_US
         url: pageURL,
         title,
         description: desc,
@@ -32,7 +32,7 @@ const Header = () => {
             url: ogImageURL,
             width: 1200,
             height: 630,
-            alt: "Neurocrist | encontra lo mejor del mercado de neumaticos",
+            alt: "Neucrist | encontra lo mejor del mercado de neumaticos",
           },
         ],
         site_name: siteName,

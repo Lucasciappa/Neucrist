@@ -1,4 +1,5 @@
 import React from "react";
+import { Slide } from "react-slideshow-image";
 import Image from "next/image";
 
 const MarcasSection = () => {
@@ -17,27 +18,62 @@ const MarcasSection = () => {
     "yokohama",
   ];
 
+  const style = {
+    textAlign: 'center',
+    background: 'teal',
+    padding: '100px 0',
+    fontSize: '30px'
+  };
+
+  const properties = {
+    duration: 3000,
+    transitionDuration: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    indicators: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        }
+    ]
+  };
+
   return (
     <>
-      <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-semibold py-6">
+    <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-semibold py-6">
         Marcas con las que trabajamos
       </h5>
-      <div className="opacity-80 ">
-
-      <div className="h-60 w-full grid grid-cols-3 px-2 gap-3 md:grid-cols-4 mb-10">
+      <div className="my-16 px-10">
+        <Slide {...properties}>
         {infoMarcas.map((data, i) => {
           return (
+            <div className="px-5 opacity-70 py-10">
+
             <Image
               key={i}
               src={`/marcas/${data}.png`}
               alt={`${data}`}
-              width={250}
-              height={60}
-            />
+              width={630}
+              height={180}
+              />
+              </div>
           );
         })}
+        </Slide>
       </div>
-            </div>
     </>
   );
 };

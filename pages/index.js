@@ -1,5 +1,5 @@
 import Header from '../components/Header';
-import HeroImage from '../components/home/HeroImage';
+import HeroCarrusel from '../components/home/HeroCarrusel';
 import Layout from '../components/Layout';
 import MarcasSection from '../components/MarcasSection';
 import ProductsSection from '../components/ProductsSection';
@@ -13,7 +13,7 @@ const index = () => {
 
             <Layout>
                 <div className="2x1:container bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 ... font-primary">
-                    <HeroImage />
+                    <HeroCarrusel />
                     <SmallCards />
                     <div className="mx-auto py-10 max-w-7xl 2lg:px-8">
                         
