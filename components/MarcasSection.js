@@ -56,7 +56,7 @@ const MarcasSection = () => {
     <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-semibold py-6">
         Marcas con las que trabajamos
       </h5>
-      <div className="my-16 px-10">
+      <div className="my-10 px-10">
         <Slide {...properties}>
         {infoMarcas.map((data, i) => {
           return (

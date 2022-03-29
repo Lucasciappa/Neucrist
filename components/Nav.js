@@ -9,15 +9,15 @@ const Nav = () => {
 
   return (
     <header className="z-50 bg-gray-600 w-full font-primary sticky top-0">
-      <nav className="flex justify-between font-primary">
-        <div className="px-5 xl:px-12 py-3 flex flex-row justify-between w-full items-center">
+      <nav className="flex justify-between items-center font-primary h-24">
+        <div className="px-5 xl:px-12 flex flex-row justify-between w-full items-center">
           {/* <a className="text-3xl font-bold font-heading" href="#">
                         <Image
                             src={profilePic}
                             alt="Picture of the author" />
                     </a> */}
           <Link href={{ pathname: "/" }}>
-            <a className="text-3xl font-bold font-heading" href="#">
+            <a className="h-24 w-24 mt-5 font-bold font-heading" href="#">
               <Image src={profilePic} alt="Neucrist Logo Picture" />
             </a>
           </Link>

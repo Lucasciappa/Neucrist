@@ -19,7 +19,7 @@ const ProductsSection = () => {
           </h5>
           <hr />
           <p className="text-primary-black text-center py-4 md:text-normal">
-            Estos son algunos de nuestros prodcutos destacados
+            Estos son algunos de nuestros productos mas demandados
           </p>
         </div>
         <div className="mx-2 lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10">
