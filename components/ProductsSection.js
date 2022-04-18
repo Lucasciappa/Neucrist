@@ -1,8 +1,35 @@
+// import ProductCard from "./ProductCard";
+// import SeeMoreBtn from "./SeeMoreBtn";
 import React from "react";
-import ProductCard from "./ProductCard";
-import SeeMoreBtn from "./SeeMoreBtn";
+import { useState } from "react/cjs/react.development";
+import BrandFilter from "./BrandFilter";
+import BrandMenu from "./BrandMenu";
+import { data } from '../data/data';
+
+console.log(data);
+
+// duplicate category
+const ButtonCategory = ['All', ...new Set(data.map((item) => item.category))];
+
+
 
 const ProductsSection = () => {
+
+  const [menuList, SetMenuList] = useState(data);
+  const [category, setCategory] = useState(ButtonCategory);
+
+  const filterCategory = (category) => {
+    const newCategory = data.filter(
+      (categoryList) => categoryList.category === category
+    );
+    // but if category same with all please add all original array
+    if (category === 'All') {
+      return SetMenuList(data);
+    }
+    // update new menuList use newCategory
+    SetMenuList(newCategory);
+  };
+
   return (
     <>
       <section className="flex flex-col justify-center mx-2 py-6 xl:mx-6">
@@ -22,18 +49,23 @@ const ProductsSection = () => {
             Estos son algunos de nuestros productos mas demandados
           </p>
         </div>
-        <div className="mx-2 lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10">
+
+        <BrandFilter filterCategory={filterCategory} category={category} />
+          <BrandMenu menuList={menuList} />
+
+
+        {/* <div className="mx-2 lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10">
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
           <ProductCard />
-          {/* {nursingHomes.map((data, i) => {
+          {nursingHomes.map((data, i) => {
                     return <CardResidence key={i} {...data} />;
-                })} */}
+                })}
         </div>
-        <SeeMoreBtn />
+        <SeeMoreBtn /> */}
         {/* <div className="lg:pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">          
             {nursingHomes.map((data, i) => {
                     return <CardResidence key={i} {...data} />;

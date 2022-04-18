@@ -3,6 +3,7 @@ import ImageFixed from "../../components/about/ImageFixed";
 import ImageBanner from "../../components/about/ImageBaner";
 import Header from "../../components/Header";
 import Layout from "../../components/Layout";
+import ValuesCard from "../../components/about/ValuesCard";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
       <Header />
       <Layout>
         <ImageFixed />
+        <ValuesCard />
         <div className="m-4 my-24 md:ml-20 md:mr-20 lg:flex">
           <div className="lg:w-2/5 lg:mr-10">
             <h2 className="text-center text-5xl">
@@ -47,6 +49,7 @@ const About = () => {
             </p>
           </div>
         </div>
+        
         <ImageBanner />
       </Layout>
     </>

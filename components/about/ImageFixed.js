@@ -1,4 +1,5 @@
 import React from "react";
+import CreatorInfo from "./CreatorInfo";
 
 const ImageFixed = () => {
   return (
@@ -7,7 +8,7 @@ const ImageFixed = () => {
         <div
           className="h-screen md:h-xl lg:bg-fixed bg-cover bg-center filter brightness-50"
           style={{
-            backgroundImage: "url('/images/productos/neumaticos2.jpg')",
+            backgroundImage: "url('/images/fotos/neumaticos2.jpg')",
           }}
         />
         <h1 className="absolute top-24 md:top-32 w-screen text-5xl">
@@ -28,6 +29,7 @@ const ImageFixed = () => {
           propia.
         </p>
       </div>
+      <CreatorInfo />
     </>
   );
 };
