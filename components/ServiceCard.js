@@ -8,7 +8,11 @@ const ServiceCard = ({ image, icon, title, desc }) => {
 
       <div className="relative flex items-end h-full transition-transform transform bg-red-200 border-2 border-primary-red group-hover:-translate-x-2 group-hover:-translate-y-2">
         <div className="px-8 pb-8 transition-opacity group-hover:opacity-0 group-hover:absolute">
-          <svg
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 700 412" stroke="currentColor" fill="#C22C0D">
+          <path d={icon} />
+        </svg>
+        <i class="fa-solid fa-user-headset"></i>
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-12 h-12"
             fill="none"
@@ -21,8 +25,7 @@ const ServiceCard = ({ image, icon, title, desc }) => {
               strokeWidth="2"
               d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
-          </svg>
-
+          </svg> */}
           <h2 className="mt-4 text-2xl font-semibold">{title}</h2>
         </div>
 

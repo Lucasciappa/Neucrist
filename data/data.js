@@ -1,44 +1,62 @@
 export const data = [
-    {
-      id: 2,
-      category: 'xfce',
-      name: 'linux mint',
-      img: 'https://www.linuxmint.com/pictures/screenshots/uma/xfce.png',
-    },
-    {
-      id: 3,
-      category: 'mate',
-      name: 'linux mint',
-      img: 'https://www.linuxmint.com/pictures/screenshots/uma/mate.png',
-    },
-    {
-      id: 4,
-      category: 'xfce',
-      name: 'manjaro xfce',
-      img: 'https://manjaro.org/img/editions/arm-xfce-full.png',
-    },
-    {
-      id: 1,
-      category: 'cinnamon',
-      name: 'linux mint',
-      img: 'https://www.linuxmint.com/pictures/screenshots/uma/cinnamon.png',
-    },
-    {
-      id: 6,
-      category: 'mate',
-      name: 'manjaro mate',
-      img: 'https://manjaro.org/img/editions/arm-mate-full.png',
-    },
-    {
-      id: 7,
-      category: 'cinnamon',
-      name: 'manjaro cinnamon',
-      img: 'https://manjaro.org/img/editions/cinnamon-full.jpg',
-    },
-    {
-      id: 5,
-      category: 'xfce',
-      name: 'manjaro xfce',
-      img: 'https://manjaro.org/img/editions/arm-xfce-full.png',
-    },
-  ];
+  {
+    id: 2,
+    category: 'bfgoodrich',
+    name: 'neumatic',
+  },
+  {
+    id: 3,
+    category: 'bridgestone',
+    name: 'neumatic',
+  },
+  {
+    id: 4,
+    category: 'continental',
+    name: 'neumatic',
+  },
+  {
+    id: 1,
+    category: 'dunlop',
+    name: 'neumatic',
+  },
+  {
+    id: 6,
+    category: 'firelli',
+    name: 'neumatic',
+  },
+  {
+    id: 7,
+    category: 'firestone',
+    name: 'neumatic',
+  },
+  {
+    id: 5,
+    category: 'goodyear',
+    name: 'neumatic',
+  },
+  {
+    id: 8,
+    category: 'fate',
+    name: 'neumatic',
+  },
+  {
+    id: 9,
+    category: 'michelin',
+    name: 'neumatic',
+  },
+  {
+    id: 10,
+    category: 'saint-gobain',
+    name: 'neumatic',
+  },
+  {
+    id: 11,
+    category: 'yokohama',
+    name: 'neumatic',
+  },
+  {
+    id: 12,
+    category: 'pilkington',
+    name: 'cristal',
+  }
+];

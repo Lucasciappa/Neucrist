@@ -2,11 +2,25 @@ import React from 'react';
 
 const BrandFilter = ({ filterCategory, category }) => {
   return (
-    <div className='flex justify-center items-center mb-10'>
+    <div className='flex flex-row flex-wrap justify-center items-center mb-10 rounded mx-4 my-3'>
       {category.map((categoryBtn, index) => {
         return (
           <button
-            className='p-5 bg-transparent border-transparent border-solid border-b-2 cursor-pointer text-base p-3 uppercase bg-green font-semibold transition duration-300 ease-in-out"'
+            className='
+            text-gray-800 
+            uppercase 
+            font-semibold 
+            text-sm 
+            cursor-pointer 
+            bg-gray-300 
+            py-2 2xl:py-3
+            px-2
+            md:px-10
+            border 
+            rounded 
+            hover:bg-primary-red 
+            hover:text-white 
+            '
             onClick={() => filterCategory(categoryBtn)}
             key={index}
           >

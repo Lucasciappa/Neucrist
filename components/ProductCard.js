@@ -3,7 +3,24 @@ import Image from "next/image";
 
 const ProductCard = () => {
   return (
-    <div
+    <div className="container">
+      <div className="card">
+        <div className="content">
+          <h2>Neumatico</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, consequuntur nesciunt minus inventore at recusandae harum! Magnam quis debitis odio!</p>
+        </div>
+        <img
+          src="/images/transparentes/neumatico.png"
+          alt="image"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;
+
+{/* <div
       className="
           bg-white
           shadow-md
@@ -22,7 +39,6 @@ const ProductCard = () => {
         src="/images/productos/neumaticos/rueda.jpg"
         alt="image"
       />
-
       <div
         className="
             flex-1
@@ -50,11 +66,7 @@ const ProductCard = () => {
           </button>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default ProductCard;
+    </div> */}
 
 // <>
 //     <div classNameName="max-w-full bg-primary-gray-light shadow-xl rounded-lg border border-primary-gray-light hover:shadow-2xl overflow-hidden my-4">
