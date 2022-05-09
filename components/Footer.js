@@ -24,7 +24,7 @@ const Footer = () => {
           ></polygon>
         </svg>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="flex flex-wrap">
           <FollowUs />
           <InfoLinks />

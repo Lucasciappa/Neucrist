@@ -2,9 +2,9 @@ import React from "react";
 
 const ValuesCard = () => {
     return (
-        <section className="container mx-auto py-10 md:py-20 antialiased ">
+        <section className="mx-auto p-8 lg:p-24 md:py-20 antialiased ">
             <h2 className="text-center uppercase text-primary-red text-4xl font-semibold p-0 mb-8">Nuestros Valores</h2>
-            <section class="grid lg:grid-cols-4 2xl:grid-cols-4 grid-cols-1 gap-8">
+            <section class="grid lg:grid-cols-2 grid-cols-1 gap-8 max-w-3xl mx-auto">
                 <article className="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
                     <img className="mx-auto mb-10 mt-10 w-40" src="./images/transparentes/corazon.png" alt="Pasion" />
                     <h2 className="text-center text-2xl mt-8 font-bold min-h-18 px-12">

@@ -15,7 +15,7 @@ const props = {
 
 const HeroCarrusel = () => {
     return (
-      <div>
+      <div className="w-full">
         <div className="absolute flex flex-col justify-center items-center h-96 w-full">
         <span className="p-2 text-3xl md:text-6xl font-bold text-primary-red bg-transparent items-center z-10">Bienvenidos a Neucrist</span>
         <div className="text-gray-300 mt-4 z-10 cursor-pointer">
@@ -26,7 +26,7 @@ const HeroCarrusel = () => {
                 />
               </div>
         </div>
-        <Slide easing="ease" {...props}>
+        <Slide easing="ease" {...props} className="w-screen">
           <div className="each-slide">
           <div className="absolute inset-0 bg-black bg-opacity-10 transition duration-300 ease-in-out"></div>
             <div className="flex flex-col justify-evenly w-full px-4 mx-auto text-center" style={{'backgroundImage': `url(${slideImages[0]})`}}>

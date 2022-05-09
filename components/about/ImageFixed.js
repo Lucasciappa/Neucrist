@@ -11,7 +11,7 @@ const ImageFixed = () => {
             backgroundImage: "url('/images/fotos/neumaticos2.jpg')",
           }}
         />
-        <h1 className="absolute top-24 md:top-32 w-screen text-5xl">
+        <h1 className="absolute top-20 md:top-32 w-screen text-5xl font-semibold">
           <span className="text-center absolute right-0 left-0 m-auto">
             <span className="text-primary-white filter brightness-100 z-50">
               Sobre
@@ -19,7 +19,7 @@ const ImageFixed = () => {
             <span className="text-primary-red">Nosotros</span>
           </span>
         </h1>
-        <p className="absolute top-44 pt-10 text-primary-white font-primary italic text-center text-2xl w-4/5 right-0 left-0 m-auto">
+        <p className="absolute top-36 md:top-44 pt-10 text-primary-white font-primary text-center text-xl md:text-2xl w-4/5 right-0 left-0 m-auto">
           Somos una empresa que nace con grandes sueños en plena
           pandemia, con el compromiso de hacer las cosas bien desde el comienzo
           y siempre. Por eso y para ello las personas que componen NEUCRIST
@@ -29,7 +29,9 @@ const ImageFixed = () => {
           propia.
         </p>
       </div>
+      <div className="static md:absolute bottom-0 left-40 lg:left-80">
       <CreatorInfo />
+      </div>
     </>
   );
 };
