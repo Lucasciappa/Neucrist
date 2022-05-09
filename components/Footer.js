@@ -29,8 +29,8 @@ const Footer = () => {
           <FollowUs />
           <InfoLinks />
         </div>
-        <Copyright />
       </div>
+        <Copyright />
     </footer>
   );
 };

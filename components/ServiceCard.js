@@ -11,7 +11,7 @@ const ServiceCard = ({ image, icon, title, desc }) => {
         <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12" viewBox="0 0 700 412" stroke="currentColor" fill="#C22C0D">
           <path d={icon} />
         </svg>
-        <i class="fa-solid fa-user-headset"></i>
+        <i className="fa-solid fa-user-headset"></i>
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-12 h-12"

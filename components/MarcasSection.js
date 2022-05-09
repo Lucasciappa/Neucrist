@@ -1,6 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import Image from "next/image";
+import MarcaSingle from "./MarcaSingle";
 
 const MarcasSection = () => {
   const infoMarcas = [
@@ -60,16 +61,7 @@ const MarcasSection = () => {
         <Slide {...properties}>
         {infoMarcas.map((data, i) => {
           return (
-            <div className="px-5 opacity-70 py-10">
-
-            <Image
-              key={i}
-              src={`/marcas/${data}.png`}
-              alt={`${data}`}
-              width={630}
-              height={180}
-              />
-              </div>
+            <MarcaSingle key={i} {...data} />
           );
         })}
         </Slide>

@@ -64,9 +64,9 @@ const Nav = () => {
                   Contacto
                 </p>
               </Link>
-              <p className="cursor-pointer w-full hover:bg-gray-300 ml-2">
+              <div className="cursor-pointer w-full hover:bg-gray-300 ml-2">
                 <DropDown />
-              </p>
+              </div>
             </div>
           </div>
         </div>

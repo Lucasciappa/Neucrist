@@ -6,12 +6,8 @@ import BrandFilter from "./BrandFilter";
 import BrandMenu from "./BrandMenu";
 import { data } from '../data/data';
 
-console.log(data);
-
 // duplicate category
 const ButtonCategory = ['All', ...new Set(data.map((item) => item.category))];
-
-
 
 const ProductsSection = () => {
 
