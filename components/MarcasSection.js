@@ -1,7 +1,6 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import Image from "next/image";
-import MarcaSingle from "./MarcaSingle";
 
 const MarcasSection = () => {
   const infoMarcas = [
@@ -35,35 +34,44 @@ const MarcasSection = () => {
     indicators: false,
     arrows: false,
     responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3
-            }
-        },
-        {
-            breakpoint: 500,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
         }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
     ]
   };
 
   return (
     <>
-    <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-semibold py-6">
+      <h5 className="text-center uppercase text-primary-red md:text-lg leading-snug tracking-widest font-semibold py-6">
         Marcas con las que trabajamos
       </h5>
       <div className="my-10 px-10">
         <Slide {...properties}>
-        {infoMarcas.map((data, i) => {
-          return (
-            <MarcaSingle key={i} {...data} />
-          );
-        })}
+          {infoMarcas.map((data, i) => {
+            return (
+              <div className="px-2 opacity-70 py-10">
+
+                <Image
+                  key={i}
+                  src={`/marcas/${data}.png`}
+                  alt={`${data}`}
+                  width={630}
+                  height={180}
+                />
+              </div>
+            );
+          })}
         </Slide>
       </div>
     </>

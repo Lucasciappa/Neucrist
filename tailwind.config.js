@@ -16,9 +16,10 @@ module.exports = {
           'white': '#FFFFFF',
           'input': '#FFF7F4',
           'home': '#F3D0C1',
-          gray: "#636363",
+          'gray': "#636363",
           "gray-light": "#EDEDED",
-          brown: "#953F3F",
+          'brown': "#953F3F",
+          'dark':"#2A2A2A"
         },
         backgroundImage: {
           "about": "url('/images/productos/neumaticos2.jpg')"

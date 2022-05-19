@@ -4,21 +4,21 @@ import SmallCard from "./SmallCard";
 const SmallCards = () => {
   const infoCards = [
     {
-      image: "/images/fotos/hands-of-mechanic-changing-a-wheel-of-a-modern-car-picture-id1154972652.jpg",
+      image: "/images/neumaticos/neu3.jpg",
       title: "Colocacion de llantas"
     },
     {
       image:
-        "/images/fotos/woman-phoning-for-help-after-car-windshield-has-broken-picture-id614347236.jpg",
+        "/images/cristales/cristal2.jpg",
       title: "Arreglo de cristales"
     },
     {
       image:
-        "/images/fotos/new-tire-is-placed-on-the-tire-storage-rack-in-the-car-workshop-be-picture-id1332478606.jpg",
+        "/images/cristales/cristal-roto1.jpg",
       title: "Reparaciones"
     },
     {
-      image: "/images/fotos/scenery-of-highway-at-dusk-picture-id1044855272.jpg",
+      image: "/images/neumaticos/neu4.jpg",
       title: "Seguridad y Confort"
     }
   ];

@@ -8,7 +8,7 @@ const Nav = () => {
   const router = useRouter();
 
   return (
-    <header className="z-50 bg-gray-300 w-full font-primary sticky top-0">
+    <header className="z-50 bg-gray-300 from-gray-400 w-full font-primary sticky top-0">
       <nav className="px-5 xl:px-12 flex flex-row justify-between w-full items-center font-primary h-24">
         <Link href={{ pathname: "/" }}>
           <a className="h-28 w-28 -mt-8 font-bold font-heading" href="#">

@@ -36,7 +36,7 @@ const ServicesSection = () => {
             Servicios que brindamos
             </h3>
             <hr />
-            <p className="text-primary-black text-center py-4 md:text-normal">
+            <p className="text-primary-white text-center py-4 md:text-normal">
             Ofrecemos servicios y soluciones para mejorar su experiencia tanto en el ámbito empresarial como personal. 
             Estamos en constante evolución, trabajando al 100%, para que sus necesidades sean cubiertas. 
             Por eso es que brindamos excelencia en los siguientes rubros: 

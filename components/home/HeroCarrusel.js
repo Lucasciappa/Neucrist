@@ -3,9 +3,9 @@ import { Slide } from 'react-slideshow-image';
 import Button from '../Button';
 
 const slideImages = [
-  '/images/fotos/neumaticos.jpg',
-  '/images/fotos/neumaticos.jpg',
-  '/images/fotos/automobile-special-workers-glazier-replacing-windscreen-windshield-of-picture-id1073249578.jpg'
+  '/images/neumaticos/neu1.jpg',
+  '/images/neumaticos/neumaticos.jpg',
+  '/images/neumaticos/neu5.jpg'
 ];
 
 const props = {

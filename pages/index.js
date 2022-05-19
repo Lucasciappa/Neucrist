@@ -13,7 +13,7 @@ const index = ({ cardsWithImg }) => {
             <Header />
 
             <Layout>
-                <div className="2x1:container bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 ... font-primary">
+                <div className="2x1:container bg-gradient-to-r from-primary-dark via-primary-black to-primary-dark ... font-primary">
                     <HeroCarrusel />
                     <SmallCards />
                     <div className="mx-auto py-10 max-w-7xl 2lg:px-8">
@@ -22,8 +22,8 @@ const index = ({ cardsWithImg }) => {
                         {cardsWithImg.map((data, i) => {
                             return <CardWithImg key={i} {...data} />;
                         })}
-                        <ProductsSection />
                         <ServicesSection />
+                        <ProductsSection />
                         <MarcasSection />
                     </div>
 
@@ -44,7 +44,7 @@ export async function getStaticProps() {
                     ],
                     textColor: "text-primary-white",
                     image: {
-                        url: "/images/fotos/neumaticos.jpg",
+                        url: "/images/neumaticos/neumaticos.jpg",
                         left: false,
                         alt: "Compra tus neumáticos en Neucrist"
                     },
@@ -59,7 +59,7 @@ export async function getStaticProps() {
                     ],
                     textColor: "text-primary-black",
                     image: {
-                        url: "/images/fotos/neumaticos.jpg",
+                        url: "/images/neumaticos/neumaticos.jpg",
                         left: true,
                         alt: "Compra tus cristales en Neucrist"
                     },
@@ -74,7 +74,7 @@ export async function getStaticProps() {
                     ],
                     textColor: "text-primary-white",
                     image: {
-                        url: "/images/fotos/neumaticos.jpg",
+                        url: "/images/neumaticos/neumaticos.jpg",
                         left: false,
                         alt: "Te ayudamos en lo que necesitas"
                     },

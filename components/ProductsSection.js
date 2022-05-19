@@ -1,73 +1,77 @@
-// import ProductCard from "./ProductCard";
-// import SeeMoreBtn from "./SeeMoreBtn";
+import Image from "next/image";
 import React from "react";
-import { useState } from "react/cjs/react.development";
-import BrandFilter from "./BrandFilter";
-import BrandMenu from "./BrandMenu";
-import { data } from '../data/data';
-
-// duplicate category
-const ButtonCategory = ['All', ...new Set(data.map((item) => item.category))];
+import Button from "./Button";
 
 const ProductsSection = () => {
 
-  const [menuList, SetMenuList] = useState(data);
-  const [category, setCategory] = useState(ButtonCategory);
-
-  const filterCategory = (category) => {
-    const newCategory = data.filter(
-      (categoryList) => categoryList.category === category
-    );
-    // but if category same with all please add all original array
-    if (category === 'All') {
-      return SetMenuList(data);
-    }
-    // update new menuList use newCategory
-    SetMenuList(newCategory);
-  };
-
   return (
+
     <>
-      <section className="flex flex-col justify-center mx-2 py-6 xl:mx-6">
-        <div className="px-3">
-        {/* <img
-          className="fixed right-0 top-0 m-auto border-none"
-          src="/images/camino.png"
-          alt="Neucrist Logo Picture"
-          width={500}
-          height={500}
-        /> */}
-          <h5 className="text-primary-red text-center leading-none text-3xl py-4 font-semibold">
-            Productos destacados
-          </h5>
-          <hr />
-          <p className="text-primary-black text-center py-4 md:text-normal">
-            Estos son algunos de nuestros productos mas demandados
-          </p>
-        </div>
+      <div className="bg-white pb-1 sm:pb-8 lg:pb-12 rounded-lg">
+        <section className="max-w-screen-2xl p-4 md:px-8 mx-auto">
+          <div className="flex flex-wrap justify-between mb-4">
+            <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
+              <h6 className="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-8">Cristales</h6>
 
-        <BrandFilter filterCategory={filterCategory} category={category} />
-          <BrandMenu menuList={menuList} />
+              <p className="max-w-md text-gray-500 xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
+            </div>
 
+            <div className="w-full lg:w-2/3 flex mb-12 md:mb-16">
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
+                <img src="/images/cristales/cristal2.jpg" loading="lazy" alt="Photo by Kaung Htet" className="w-full h-full object-cover object-center" />
+              </div>
 
-        {/* <div className="mx-2 lg:pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          {nursingHomes.map((data, i) => {
-                    return <CardResidence key={i} {...data} />;
-                })}
-        </div>
-        <SeeMoreBtn /> */}
-        {/* <div className="lg:pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-2">          
-            {nursingHomes.map((data, i) => {
-                    return <CardResidence key={i} {...data} />;
-                })}
-        </div> */}
-      </section>
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/cristales/cristal1.jpg" loading="lazy" alt="Photo by Manny Moreno" className="w-full h-full object-cover object-center" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="bg-white pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
+        <section className="max-w-screen-2xl p-4 md:px-8 mx-auto">
+          <div className="flex flex-wrap justify-between mb-4">
+            <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
+              <h6 className="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-8">Neumaticos</h6>
+
+              <p className="max-w-md text-gray-500 xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
+            </div>
+
+            <div className="w-full lg:w-2/3 flex mb-12 md:mb-16">
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
+                <img src="/images/neumaticos/neu1.jpg" loading="lazy" alt="Photo by Kaung Htet" className="w-full h-full object-cover object-center" />
+              </div>
+
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/neumaticos/neu2.jpg" loading="lazy" alt="Photo by Manny Moreno" className="w-full h-full object-cover object-center" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="bg-white pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
+        <section className="max-w-screen-2xl p-4 md:px-8 mx-auto">
+          <div className="flex flex-wrap justify-between mb-4">
+            <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
+              <h6 className="text-black-800 text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-8">Autopartes</h6>
+
+              <p className="max-w-md text-gray-500 xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
+            </div>
+
+            <div className="w-full lg:w-2/3 flex mb-12 md:mb-16">
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden relative z-10 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0">
+                <img src="/images/neumaticos/neu3.jpg" loading="lazy" alt="Photo by Kaung Htet" className="w-full h-full object-cover object-center" />
+              </div>
+
+              <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/neumaticos/neu4.jpg" loading="lazy" alt="Photo by Manny Moreno" className="w-full h-full object-cover object-center" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 };
