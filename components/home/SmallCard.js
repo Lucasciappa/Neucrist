@@ -7,7 +7,7 @@ const SmallCard = ({ image, title }) => {
 
   return (
     <div
-      className="relative w-full h-48 md:h-96 lg:h-40 bg-cover bg-center group rounded-sm overflow-hidden shadow-lg"
+      className="relative w-full h-48 md:h-96 lg:h-40 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg"
       style={styling}
     >
       <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:opacity-75 transition duration-300 ease-in-out"></div>

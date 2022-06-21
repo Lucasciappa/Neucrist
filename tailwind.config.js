@@ -10,16 +10,16 @@ module.exports = {
       colors: {
         'primary': {
           'red': '#C22C0D',
-          'red-hover': '#61050A',
+          'red-hover': '#C22C0Dea',
           'yellow': '·F7C700',
-          'black': '#333333',
+          'black': '#2a2a2a',
           'white': '#FFFFFF',
           'input': '#FFF7F4',
           'home': '#F3D0C1',
           'gray': "#636363",
           "gray-light": "#EDEDED",
           'brown': "#953F3F",
-          'dark':"#2A2A2A"
+          'dark':"#DDDDDD"
         },
         backgroundImage: {
           "about": "url('/images/productos/neumaticos2.jpg')"

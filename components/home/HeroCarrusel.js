@@ -15,7 +15,7 @@ const props = {
 
 const HeroCarrusel = () => {
     return (
-      <div className="w-screen">
+      <div className="">
         <div className="absolute flex flex-col justify-center items-center h-96 w-full">
         <span className="p-2 text-3xl md:text-6xl font-bold text-primary-red bg-transparent items-center z-10">Bienvenidos a Neucrist</span>
         <div className="text-gray-300 mt-4 z-10 cursor-pointer">
