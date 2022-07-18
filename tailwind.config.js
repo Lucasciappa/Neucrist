@@ -6,6 +6,15 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"], // remove unused styles in production
   darkMode: false, // or 'media' or 'class'
   theme: {
+    boxShadow: {
+      "shadow-top":
+        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 -10px 15px -3px rgba(0, 0, 0, 0.1)",
+      "shadow-bottom":
+        "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px",
+      "shadow-bot": "rgba(0, 0, 0, 0.20) 0px 10px 7px -7px;",
+      "shadow-none": "0",
+      "shadow-search-bar": "0 3px 10px rgb(0 0 0 / 10%)"
+    },
     extend: {
       colors: {
         'primary': {
@@ -24,9 +33,13 @@ module.exports = {
         backgroundImage: {
           "about": "url('/images/productos/neumaticos2.jpg')"
         },
+        spacing: {
+          128: '32rem',
+        },
         height: {
           '192': '48rem',
-          '288': '72rem'
+          '288': '72rem',
+          128: '32rem',
         },
         'text': {
           'primary': '#222222',

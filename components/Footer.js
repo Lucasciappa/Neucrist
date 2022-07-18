@@ -1,24 +1,10 @@
-import Copyright from "./footer/FooterCopyright";
-import InfoLinks from "./footer/FooterInfoLinks";
-import FollowUs from "./footer/FooterFollowUs";
 
 const Footer = () => {
   return (
     <div class="bg-primary-black">
       <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-10 lg:pt-12 mb-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-4 lg:pt-12 mb-16">
           <div class="col-span-full lg:col-span-2">
-            {/* <!-- logo - start --> */}
-            <div class="lg:-mt-2 mb-4">
-              <a href="/" class="inline-flex items-center text-gray-100 text-xl md:text-2xl font-bold gap-2" aria-label="logo">
-                <svg width="95" height="94" viewBox="0 0 95 94" class="w-5 h-auto text-primary-red" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-                </svg>
-
-                Neucrist
-              </a>
-            </div>
-            {/* <!-- logo - end --> */}
 
             <p class="text-gray-400 sm:pr-8 mb-6">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
 
@@ -116,15 +102,15 @@ const Footer = () => {
           </div>
           {/*  <!-- nav - end --> */}
         </div>
-        
-        <div class="flex flex-col md:flex-row justify-around items-center gap-2 py-6">
+
+        <div class="flex flex-col md:flex-row justify-evenly items-center gap-2">
           <div class="text-center md:text-left mb-3 md:mb-0">
             <span class="text-primary-red font-bold uppercase tracking-widest">Newsletter</span>
             <p class="text-primary-white">Subscribe to our newsletter</p>
           </div>
 
           <form class="w-full md:max-w-md flex gap-2">
-            <input placeholder="Email" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 focus:ring ring-indigo-300 rounded outline-none transition duration-100 px-3 py-2" />
+            <input placeholder="Email" class="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 focus:ring ring-primary-red rounded outline-none transition duration-100 px-3 py-2" />
 
             <button class="inline-block bg-primary-red hover:bg-primary-red-hover active:primary-red-hover  focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Send</button>
           </form>
