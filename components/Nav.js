@@ -9,14 +9,6 @@ const Nav = () => {
     <div class="bg-primary-dark pb-6 sm:pb-8 lg:pb-12">
       <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <header class="flex justify-between items-center mb-4">
-
-          {/* <a href="/" class="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5" aria-label="logo">
-            <svg width="95" height="94" viewBox="0 0 95 94" class="w-6 h-auto text-primary-red" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-            </svg>
-
-            Flowrift
-          </a> */}
           <Link href={{ pathname: "/" }}>
             <a className="h-28 w-28 font-bold font-heading" href="#">
               <Image src={profilePic} alt="Neucrist Logo Picture" />
@@ -57,7 +49,7 @@ const Nav = () => {
             </div>
           </button>
         </header>
-          <HeroImage />
+        <HeroImage />
         <div className="fixed bottom-0 right-0 mb-4 mr-4 z-10">
           <div>
             <a
