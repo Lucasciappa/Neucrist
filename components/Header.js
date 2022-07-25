@@ -1,6 +1,5 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
-import { DOMAIN } from "../config";
 
 
 const Header = () => {
@@ -9,7 +8,7 @@ const Header = () => {
   const desc = "Los mejores neumaticos que puedes encontrar en el mercado";
   const ogImgRelativePath = "/og.png";
 
-  const siteURL = { DOMAIN };
+  const siteURL = "https://neucrist.com";
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;
