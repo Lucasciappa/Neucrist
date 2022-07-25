@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import profilePic from "../public/images/logo-neucrist.png";
-import HeroImage from "./HeroImage";
 
 const Nav = () => {
 
