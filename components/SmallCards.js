@@ -24,7 +24,7 @@ const SmallCards = () => {
   ];
 
   return (
-    <section className="">
+    <section className="-mb-20">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-2 place-items-center px-4">
         {infoCards.map((data, i) => {
           return <SmallCard key={i} {...data} />;

@@ -7,7 +7,7 @@ const Nav = () => {
     <>
       <header class="flex justify-between items-center bg-primary-dark py-1 md:py-2 px-4 md:px-8 mx-auto sticky top-0 z-50 shadow-shadow-bot">
         <a href="#">
-            <img src="/images/logo-neucrist.png" loading="lazy" alt="Neucrist Logo Picture" className="w-24 h-auto" />
+            <img src="/images/iconos/logo-neucrist.png" loading="lazy" alt="Neucrist Logo Picture" className="w-24 h-auto" />
             {/* <Image src="/images/logo-neucrist.png" alt="Neucrist Logo Picture" width={90} height={90} objectFit="cover" /> */}
         </a>
 
