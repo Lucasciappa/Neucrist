@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import profilePic from "../public/images/logo-neucrist.png";
 
 const Nav = () => {
 
@@ -15,8 +14,8 @@ const Nav = () => {
             Flowrift
           </a> */}
         <Link href={{ pathname: "/" }}>
-          <a className="w-20 h-20 font-bold font-heading" href="#">
-            <Image src={profilePic} alt="Neucrist Logo Picture" />
+          <a className="font-bold font-heading" href="#">
+            <Image src="/images/logo-neucrist.png" alt="Neucrist Logo Picture" width={90} height={90} objectFit="cover" />
           </a>
         </Link>
 
@@ -33,7 +32,7 @@ const Nav = () => {
           <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
           <label htmlFor="abrir-cerrar" className="toggle-button" />
           Menu
-          <div className="bg-primary-dark w-full h-72 absolute z-50 left-0 top-20 hamburguer shadow-shadow-bot">
+          <div className="bg-primary-dark w-full h-72 absolute z-50 left-0 top-20 hamburguer shadow-shadow-bot" >
             <div className="my-5 text-center">
               <Link href="#about">
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
