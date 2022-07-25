@@ -8,6 +8,7 @@ import SmallCards from '../components/home/SmallCards';
 import CardWithImg from '../components/home/CardWithImg';
 import Image from 'next/image';
 import Link from 'next/link';
+import ValuesCard from '../components/about/ValuesCard';
 
 const example = ({ cardsWithImg }) => {
     return (
@@ -18,6 +19,42 @@ const example = ({ cardsWithImg }) => {
 
                 <SmallCards />
 
+                {/* about  */}
+                <h2 class="text-gray-800 text-4xl font-bold text-center my-8">Sobre Nosotros</h2>
+
+                <div
+                    class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-6 max-w-7xl"
+                >
+
+                    <div class="my-auto flex flex-col gap-3">
+                        <p class="text-primary-black">
+                            Nos dedicamos a asesorar, gestionar y buscar a travÃ©s de nuestra
+                            pÃ¡gina web los mejores productos para tu rodado
+                        </p>
+                        <p class="text-primary-black">Nuestra prioridad y nuestro firme compromiso es ofrecer a nuestros clientes calidad sin cortapisas.
+
+                        </p>
+                        <p class="text-primary-black">
+                            Nos diferenciamos porque apostamos por la implantaciÃ³n de
+                            herramientas online que mejoran su experiencia
+                        </p>
+                        <p class="text-primary-black">
+                            Te invitamos a ponerte en contacto con nosotros o bien a travÃ©s
+                            de nuestras redes sociales, telÃ©fono .. o lo que sea
+                            mÃ¡s cÃ³modo para ti.
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="h-full rounded-full overflow-hidden">
+                            <img src="/images/neumaticos/neu1.jpg" loading="lazy" alt="quienes somos picture" className="w-full h-full object-cover object-center" />
+                        </div>
+                    </div>
+                </div>
+
+                <ValuesCard />
+
+                {/* fin about */}
+
                 {/* <!-- features - start --> */}
                 <div class="py-6 sm:py-8 lg:py-12">
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
@@ -25,58 +62,191 @@ const example = ({ cardsWithImg }) => {
                         <div class="mb-10 md:mb-16">
                             <h2 class="text-gray-800 text-3xl font-bold text-center mb-4 md:mb-6">Nuestra ventaja competitiva</h2>
 
-                            <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y así poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicación para el servicio de Cristales y Neumaticos. </p>
+                            <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y asÃƒÂ­ poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicaciÃƒÂ³n para el servicio de Cristales y Neumaticos. </p>
                         </div>
                         {/* <!-- text - end --> */}
 
                         <div class="grid sm:grid-cols-2 gap-8 md:gap-12 xl:gap-16">
                             <div class="flex gap-4 md:gap-6">
                                 <div class="p-1 w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-primary-red text-white rounded-lg md:rounded-xl shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                    </svg> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"
+                                        viewBox="0 0 490 490" fill="#fff" stroke="currentColor">
+                                        <g id="bold_copy_6_">
+                                            <path d="M228.738,249.984c-3.553-4.686-5.987-10.259-7.289-16.737l-31.651,3.399c2.419,15.925,7.993,28.267,16.737,36.995
+		c8.743,8.728,20.09,13.95,34.101,15.649v22.065h17.579v-22.678c15.772-2.251,28.083-8.407,36.949-18.436
+		c8.851-10.03,13.276-22.372,13.276-36.995c0-13.092-3.507-23.842-10.55-32.217c-7.028-8.376-20.258-15.175-39.675-20.442v-47.423
+		c7.855,3.399,12.694,9.876,14.562,19.416l30.686-4.012c-2.098-12.128-6.952-21.82-14.547-29.048
+		c-7.61-7.243-17.839-11.622-30.702-13.153v-12.02h-17.579v12.005c-13.904,1.378-25.051,6.569-33.427,15.588
+		c-8.376,9.034-12.556,20.167-12.556,33.427c0,13.107,3.706,24.255,11.117,33.443c7.396,9.172,19.018,16.032,34.867,20.565v50.822
+		C236.272,258.085,232.306,254.685,228.738,249.984z M258.215,214.566c7.289,2.113,12.51,5.13,15.711,9.05
+		c3.2,3.92,4.777,8.606,4.777,14.011c0,6.064-1.899,11.331-5.696,15.818c-3.797,4.486-8.728,7.304-14.807,8.437v-47.316H258.215z
+		 M228.861,165.857c-2.588-3.675-3.874-7.656-3.874-11.944c0-4.686,1.409-8.973,4.226-12.862c2.848-3.874,6.646-6.63,11.408-8.238
+		v41.956C235.368,172.518,231.448,169.532,228.861,165.857z"/>
+                                            <path d="M467.031,43.709H22.969C10.336,43.709,0,54.045,0,66.678v273.068c0,12.633,10.336,22.969,22.969,22.969h183.75v52.951
+		h-69.856v30.625h216.289v-30.625h-69.871v-52.951h183.75c12.633,0,22.969-10.336,22.969-22.969V66.678
+		C490,54.045,479.664,43.709,467.031,43.709z M459.375,332.105H30.625V74.335h428.75V332.105z"/>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
                                     </svg>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cotización en línea</h3>
-                                    <p class="text-primary-black mb-2">Presentamos una manera fácil de garantizar precios, favoreciendo, a su vez, la difusión de presupuestos y compras en su negocio.</p>
+                                    <h3 class="text-lg md:text-xl font-semibold mb-2">CotizaciÃƒÂ³n en lÃƒÂ­nea</h3>
+                                    <p class="text-primary-black mb-2">Presentamos una manera fÃƒÂ¡cil de garantizar precios, favoreciendo, a su vez, la difusiÃƒÂ³n de presupuestos y compras en su negocio.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4 md:gap-6">
                                 <div class="p-1 w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-primary-red text-white rounded-lg md:rounded-xl shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                    </svg> */}
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="w-6 h-6"
+                                        fill="white"
+                                        stroke="currentColor"
+                                        viewBox="0 0 128 128"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M125.33705,27.01578a1.05621,1.05621,0,0,0-1.76179-.462L106.37554,43.75354a5.98262,5.98262,0,0,1-8.46069,0L84.20513,30.04382a5.98262,5.98262,0,0,1,0-8.46069L101.40485,4.3834a1.05621,1.05621,0,0,0-.462-1.76179A35.68012,35.68012,0,0,0,57.66309,49.448L5.6855,101.42558a14.95454,14.95454,0,0,0-.00221,21.21183,14.75874,14.75874,0,0,0,20.66488-.1795L78.51055,70.29553a35.68013,35.68013,0,0,0,46.82651-43.27975Z"
+                                            id="id_102"
+                                        ></path>
                                     </svg>
                                 </div>
 
                                 <div>
                                     <h3 class="text-lg md:text-xl font-semibold mb-2">Colocaciones y Arreglos</h3>
-                                    <p class="text-primary-black mb-2">Gracias a nuestros expertos realizamos cambio de parabrisas, polarizados y neumáticos en el momento para que puedas volver al ruedo en el momento deseado.</p>
+                                    <p class="text-primary-black mb-2">Gracias a nuestros expertos realizamos cambio de parabrisas, polarizados y neumÃƒÂ¡ticos en el momento para que puedas volver al ruedo en el momento deseado.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4 md:gap-6">
                                 <div class="p-1 w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-primary-red text-white rounded-lg md:rounded-xl shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                                    </svg> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 612 612" className="w-6 h-6"
+                                        fill="white"
+                                        stroke="currentColor">
+                                        <g>
+                                            <path d="M12.57,385.084h316.849c4.735,0,8.61-3.875,8.61-8.609V119.809c0-14.266-11.564-25.83-25.83-25.83H29.791
+		c-14.266,0-25.83,11.564-25.83,25.83v256.664C3.96,381.209,7.835,385.084,12.57,385.084z M76.417,212.128
+		c0-5.902,4.784-10.687,10.687-10.687h84.528v-30.118c0-9.521,11.514-14.289,18.245-7.554l72.838,72.873
+		c4.171,4.173,4.171,10.938,0,15.11l-72.838,72.861c-6.732,6.734-18.245,1.967-18.245-7.555v-30.125H87.103
+		c-5.902,0-10.687-4.785-10.687-10.687V212.128z M113.48,454.221H8.61c-4.736,0-8.61-3.873-8.61-8.609v-26.174
+		c0-4.736,3.874-8.611,8.61-8.611h128.634C124.673,421.762,115.977,437.002,113.48,454.221z M603.39,410.828h-20.922V293.817
+		c0-13.689-4.133-27.121-11.796-38.486l-52.434-77.663c-12.83-18.942-34.183-30.307-57.085-30.307h-81.278
+		c-9.558,0-17.221,7.749-17.221,17.22v246.247H229.543c12.657,10.934,21.353,26.174,23.85,43.395h140.343
+		c4.994-34.182,34.44-60.615,70-60.615s64.919,26.434,69.913,60.615h69.741c4.736,0,8.61-3.875,8.61-8.611v-26.174
+		C612,414.703,608.126,410.828,603.39,410.828z M517.634,270.828h-107.28c-4.735,0-8.61-3.789-8.61-8.61v-59.495
+		c0-4.735,3.875-8.61,8.61-8.61h65.351c2.841,0,5.424,1.377,7.06,3.616l41.931,59.582
+		C528.654,262.994,524.608,270.828,517.634,270.828z M183.394,410.828c-29.532,0-53.555,24.021-53.555,53.641
+		c0,29.531,24.022,53.553,53.555,53.553c29.618,0,53.554-24.021,53.554-53.553C236.947,434.85,213.012,410.828,183.394,410.828z
+		 M183.394,491.246c-14.81,0-26.777-12.055-26.777-26.777c0-14.811,11.968-26.777,26.777-26.777
+		c14.809,0,26.777,11.967,26.777,26.777C210.171,479.191,198.202,491.246,183.394,491.246z M463.735,410.828
+		c-29.618,0-53.555,24.021-53.555,53.641c0,29.531,23.937,53.553,53.555,53.553c29.532,0,53.554-24.021,53.554-53.553
+		C517.29,434.85,493.269,410.828,463.735,410.828z M463.735,491.246c-14.81,0-26.777-12.055-26.777-26.777
+		c0-14.811,11.968-26.777,26.777-26.777c14.809,0,26.777,11.967,26.777,26.777C490.513,479.191,478.545,491.246,463.735,491.246z"/>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
                                     </svg>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-lg md:text-xl font-semibold mb-2">Logística</h3>
-                                    <p class="text-primary-black mb-2">Nos comprometemos a un servicio de logística propia para garantizar entregas eficaces y sin problemas.</p>
+                                    <h3 class="text-lg md:text-xl font-semibold mb-2">LogÃƒÂ­stica</h3>
+                                    <p class="text-primary-black mb-2">Nos comprometemos a un servicio de logÃƒÂ­stica propia para garantizar entregas eficaces y sin problemas.</p>
                                 </div>
                             </div>
 
                             <div class="flex gap-4 md:gap-6">
                                 <div class="p-1 w-12 md:w-14 h-12 md:h-14 flex justify-center items-center shrink-0 bg-primary-red text-white rounded-lg md:rounded-xl shadow-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    {/* <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg> */}
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        className="w-6 h-6"
+                                        fill="none"
+                                        stroke="currentColor"
+                                    >
+                                        {/* <path d="M0 0h24v24H0z"/> */}
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M21 8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-1.062A8.001 8.001 0 0 1 12 23v-2a6 6 0 0 0 6-6V9A6 6 0 1 0 6 9v7H3a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h1.062a8.001 8.001 0 0 1 15.876 0H21zM7.76 15.785l1.06-1.696A5.972 5.972 0 0 0 12 15a5.972 5.972 0 0 0 3.18-.911l1.06 1.696A7.963 7.963 0 0 1 12 17a7.963 7.963 0 0 1-4.24-1.215z "
+                                        />
                                     </svg>
                                 </div>
 
                                 <div>
                                     <h3 class="text-lg md:text-xl font-semibold mb-2">Asesoramiento</h3>
-                                    <p class="text-primary-black mb-2">Recibimos tu contacto e información a traves de nuestro Whatsapp para que podamos ayudarte de la manera mas rápida y eficiente.</p>
+                                    <p class="text-primary-black mb-2">Recibimos tu contacto e informaciÃƒÂ³n a traves de nuestro Whatsapp para que podamos ayudarte de la manera mas rÃƒÂ¡pida y eficiente.</p>
                                 </div>
                             </div>
 
@@ -88,15 +258,15 @@ const example = ({ cardsWithImg }) => {
                 <div className=' pb-6 sm:pb-8 lg:pb-12'>
                     <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
 
-                        <h2 class="text-gray-800 text-4xl font-bold text-center mb-4 md:mb-8">Productos</h2>
+                        <h2 class="text-gray-800 text-4xl font-bold text-center mb-4">Productos</h2>
 
-                        <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y así poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicación para el servicio de Cristales y Neumaticos. </p>
+                        <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y asÃƒÂ­ poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicaciÃƒÂ³n para el servicio de Cristales y Neumaticos. </p>
 
                         <div className=" pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
                             <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
-                                        <h6 className="text-primary-white text-3xl md:text-4xl font-bold mb-4 md:mb-8">Cristales</h6>
+                                        <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Cristales</h6>
 
                                         <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
                                     </div>
@@ -118,7 +288,7 @@ const example = ({ cardsWithImg }) => {
                             <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
-                                        <h6 className="text-primary-white text-3xl md:text-4xl font-bold mb-4 md:mb-8">Neumaticos</h6>
+                                        <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Neumaticos</h6>
 
                                         <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
                                     </div>
@@ -140,7 +310,7 @@ const example = ({ cardsWithImg }) => {
                             <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
-                                        <h6 className="text-primary-white text-3xl md:text-4xl font-bold mb-4 md:mb-8">Autopartes</h6>
+                                        <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Autopartes</h6>
 
                                         <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
                                     </div>
@@ -161,46 +331,36 @@ const example = ({ cardsWithImg }) => {
                     </div>
                 </div>
 
+
+
+
                 {/* <!-- logo cloud - start --> */}
                 <div class=" py-6 sm:py-8 lg:py-12">
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-                        <h2 class="text-gray-800 text-3xl font-bold text-center mb-4 md:mb-8">Marcas que confían</h2>
+                        <h2 class="text-gray-800 text-3xl font-bold text-center mb-8">Marcas que confÃƒÂ­an</h2>
 
                         <div class="sm:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly bg-gray-100 rounded-lg gap-6 p-6">
                             {/* <!-- logo - start --> */}
                             <div class="flex justify-center text-gray-400">
-                                <svg class="w-auto h-6 sm:h-8 lg:h-10" width="154" height="39" viewBox="0 0 154 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M35.0227 31H39.9432V21.3864H49.4091V17.3295H39.9432V11.7841H50.4318V7.72727H35.0227V31ZM58.4915 7.72727H53.6506V31H58.4915V7.72727ZM70.2557 31.3409C75.5511 31.3409 78.8466 27.7159 78.8466 22.3409C78.8466 16.9318 75.5511 13.3182 70.2557 13.3182C64.9602 13.3182 61.6648 16.9318 61.6648 22.3409C61.6648 27.7159 64.9602 31.3409 70.2557 31.3409ZM70.2784 27.5909C67.8352 27.5909 66.5852 25.3523 66.5852 22.3068C66.5852 19.2614 67.8352 17.0114 70.2784 17.0114C72.6761 17.0114 73.9261 19.2614 73.9261 22.3068C73.9261 25.3523 72.6761 27.5909 70.2784 27.5909ZM85 31H90.1136L93.1136 20.0227H93.3295L96.3295 31H101.455L106.193 13.5455H101.307L98.6477 25.2045H98.5L95.6364 13.5455H90.8295L88.0114 25.2727H87.8523L85.1477 13.5455H80.25L85 31ZM108.776 31H113.616V21.125C113.616 18.9773 115.185 17.5 117.321 17.5C117.991 17.5 118.912 17.6136 119.366 17.7614V13.4659C118.935 13.3636 118.332 13.2955 117.844 13.2955C115.889 13.2955 114.287 14.4318 113.651 16.5909H113.469V13.5455H108.776V31ZM121.869 31H126.71V13.5455H121.869V31ZM124.301 11.2955C125.744 11.2955 126.926 10.1932 126.926 8.84091C126.926 7.5 125.744 6.39773 124.301 6.39773C122.869 6.39773 121.688 7.5 121.688 8.84091C121.688 10.1932 122.869 11.2955 124.301 11.2955ZM139.974 13.5455H136.509V12.375C136.509 11.1932 136.986 10.5 138.406 10.5C138.986 10.5 139.577 10.625 139.963 10.75L140.815 7.11364C140.213 6.93182 138.884 6.63636 137.395 6.63636C134.111 6.63636 131.668 8.48864 131.668 12.2841V13.5455H129.202V17.1818H131.668V31H136.509V17.1818H139.974V13.5455ZM152.216 13.5455H148.932V9.36364H144.091V13.5455H141.705V17.1818H144.091V26.2727C144.068 29.6932 146.398 31.3864 149.909 31.2386C151.159 31.1932 152.045 30.9432 152.534 30.7841L151.773 27.1818C151.534 27.2273 151.023 27.3409 150.568 27.3409C149.602 27.3409 148.932 26.9773 148.932 25.6364V17.1818H152.216V13.5455Z" />
-                                    <path d="M24 8V20L12 32H0V20L12 8H24Z" />
-                                </svg>
+                                <img src='/marcas/bfgoodrich-bn.jpeg' />
                             </div>
                             {/* <!-- logo - end --> */}
 
                             {/* <!-- logo - start --> */}
                             <div class="flex justify-center text-gray-400">
-                                <svg class="w-auto h-6 sm:h-8 lg:h-10" width="186" height="39" viewBox="0 0 186 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M43.0909 31C50.1818 31 54.2841 26.6023 54.2841 19.3295C54.2841 12.0909 50.1818 7.72727 43.3295 7.72727H35.5568V31H43.0909ZM39.0682 27.9318V10.7955H43.1136C48.2045 10.7955 50.8295 13.8409 50.8295 19.3295C50.8295 24.8409 48.2045 27.9318 42.8977 27.9318H39.0682ZM63.4574 31.3864C66.3438 31.3864 67.9688 29.9205 68.6165 28.6136H68.7528V31H72.071V19.4091C72.071 14.3295 68.071 13.3182 65.2983 13.3182C62.1392 13.3182 59.2301 14.5909 58.0938 17.7727L61.2869 18.5C61.7869 17.2614 63.0597 16.0682 65.3438 16.0682C67.5369 16.0682 68.6619 17.2159 68.6619 19.1932V19.2727C68.6619 20.5114 67.3892 20.4886 64.2528 20.8523C60.946 21.2386 57.5597 22.1023 57.5597 26.0682C57.5597 29.5 60.1392 31.3864 63.4574 31.3864ZM64.196 28.6591C62.2756 28.6591 60.8892 27.7955 60.8892 26.1136C60.8892 24.2955 62.5028 23.6477 64.4688 23.3864C65.571 23.2386 68.1847 22.9432 68.6733 22.4545V24.7045C68.6733 26.7727 67.0256 28.6591 64.196 28.6591ZM89.6761 17.8068C88.9716 15.0909 86.8466 13.3182 83.0739 13.3182C79.1307 13.3182 76.3352 15.3977 76.3352 18.4886C76.3352 20.9659 77.8352 22.6136 81.108 23.3409L84.0625 23.9886C85.7443 24.3636 86.5284 25.1136 86.5284 26.2045C86.5284 27.5568 85.0852 28.6136 82.858 28.6136C80.8239 28.6136 79.517 27.7386 79.108 26.0227L75.8239 26.5227C76.392 29.6136 78.9602 31.3523 82.8807 31.3523C87.0966 31.3523 90.017 29.1136 90.017 25.9545C90.017 23.4886 88.4489 21.9659 85.2443 21.2273L82.4716 20.5909C80.5511 20.1364 79.7216 19.4886 79.733 18.3068C79.7216 16.9659 81.1761 16.0114 83.108 16.0114C85.2216 16.0114 86.1989 17.1818 86.5966 18.3523L89.6761 17.8068ZM97.1506 20.6364C97.1506 17.8523 98.9119 16.2614 101.332 16.2614C103.673 16.2614 105.071 17.75 105.071 20.3068V31H108.469V19.8977C108.469 15.5455 106.082 13.3182 102.491 13.3182C99.7756 13.3182 98.1392 14.5 97.321 16.3864H97.1051V7.72727H93.7528V31H97.1506V20.6364ZM119.537 31.3409C122.719 31.3409 123.969 29.3977 124.582 28.2841H124.866V31H128.185V7.72727H124.787V16.375H124.582C123.969 15.2955 122.81 13.3182 119.56 13.3182C115.344 13.3182 112.241 16.6477 112.241 22.3068C112.241 27.9545 115.298 31.3409 119.537 31.3409ZM120.287 28.4432C117.253 28.4432 115.673 25.7727 115.673 22.2727C115.673 18.8068 117.219 16.2045 120.287 16.2045C123.253 16.2045 124.844 18.625 124.844 22.2727C124.844 25.9432 123.219 28.4432 120.287 28.4432ZM138.114 31.3864C141 31.3864 142.625 29.9205 143.273 28.6136H143.409V31H146.727V19.4091C146.727 14.3295 142.727 13.3182 139.955 13.3182C136.795 13.3182 133.886 14.5909 132.75 17.7727L135.943 18.5C136.443 17.2614 137.716 16.0682 140 16.0682C142.193 16.0682 143.318 17.2159 143.318 19.1932V19.2727C143.318 20.5114 142.045 20.4886 138.909 20.8523C135.602 21.2386 132.216 22.1023 132.216 26.0682C132.216 29.5 134.795 31.3864 138.114 31.3864ZM138.852 28.6591C136.932 28.6591 135.545 27.7955 135.545 26.1136C135.545 24.2955 137.159 23.6477 139.125 23.3864C140.227 23.2386 142.841 22.9432 143.33 22.4545V24.7045C143.33 26.7727 141.682 28.6591 138.852 28.6591ZM164.332 17.8068C163.628 15.0909 161.503 13.3182 157.73 13.3182C153.787 13.3182 150.991 15.3977 150.991 18.4886C150.991 20.9659 152.491 22.6136 155.764 23.3409L158.719 23.9886C160.401 24.3636 161.185 25.1136 161.185 26.2045C161.185 27.5568 159.741 28.6136 157.514 28.6136C155.48 28.6136 154.173 27.7386 153.764 26.0227L150.48 26.5227C151.048 29.6136 153.616 31.3523 157.537 31.3523C161.753 31.3523 164.673 29.1136 164.673 25.9545C164.673 23.4886 163.105 21.9659 159.901 21.2273L157.128 20.5909C155.207 20.1364 154.378 19.4886 154.389 18.3068C154.378 16.9659 155.832 16.0114 157.764 16.0114C159.878 16.0114 160.855 17.1818 161.253 18.3523L164.332 17.8068ZM171.807 20.6364C171.807 17.8523 173.568 16.2614 175.989 16.2614C178.33 16.2614 179.727 17.75 179.727 20.3068V31H183.125V19.8977C183.125 15.5455 180.739 13.3182 177.148 13.3182C174.432 13.3182 172.795 14.5 171.977 16.3864H171.761V7.72727H168.409V31H171.807V20.6364Z" />
-                                    <path d="M0 31L24 7V31H0Z" />
-                                </svg>
+                                <img src='/marcas/continental-bn.jpeg' />
                             </div>
                             {/* <!-- logo - end --> */}
 
                             {/* <!-- logo - start --> */}
                             <div class="flex justify-center text-gray-400">
-                                <svg class="w-auto h-6 sm:h-8 lg:h-10" width="173" height="39" viewBox="0 0 173 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M43.2727 31C50.3636 31 54.6591 26.6136 54.6591 19.3409C54.6591 12.0909 50.3636 7.72727 43.3409 7.72727H35.0227V31H43.2727ZM39.9432 26.7841V11.9432H43.0795C47.4432 11.9432 49.75 14.1705 49.75 19.3409C49.75 24.5341 47.4432 26.7841 43.0682 26.7841H39.9432ZM63.1903 31.3295C65.7699 31.3295 67.4403 30.2045 68.2926 28.5795H68.429V31H73.0199V19.2273C73.0199 15.0682 69.4972 13.3182 65.6108 13.3182C61.429 13.3182 58.679 15.3182 58.0085 18.5L62.4858 18.8636C62.8153 17.7045 63.8494 16.8523 65.5881 16.8523C67.2358 16.8523 68.179 17.6818 68.179 19.1136V19.1818C68.179 20.3068 66.9858 20.4545 63.9517 20.75C60.4972 21.0682 57.3949 22.2273 57.3949 26.125C57.3949 29.5795 59.8608 31.3295 63.1903 31.3295ZM64.5767 27.9886C63.0881 27.9886 62.0199 27.2955 62.0199 25.9659C62.0199 24.6023 63.1449 23.9318 64.8494 23.6932C65.9062 23.5455 67.6335 23.2955 68.2131 22.9091V24.7614C68.2131 26.5909 66.7017 27.9886 64.5767 27.9886ZM86.0597 13.5455H82.7756V9.36364H77.9347V13.5455H75.5483V17.1818H77.9347V26.2727C77.9119 29.6932 80.2415 31.3864 83.7528 31.2386C85.0028 31.1932 85.8892 30.9432 86.3778 30.7841L85.6165 27.1818C85.3778 27.2273 84.8665 27.3409 84.4119 27.3409C83.446 27.3409 82.7756 26.9773 82.7756 25.6364V17.1818H86.0597V13.5455ZM94.1903 31.3295C96.7699 31.3295 98.4403 30.2045 99.2926 28.5795H99.429V31H104.02V19.2273C104.02 15.0682 100.497 13.3182 96.6108 13.3182C92.429 13.3182 89.679 15.3182 89.0085 18.5L93.4858 18.8636C93.8153 17.7045 94.8494 16.8523 96.5881 16.8523C98.2358 16.8523 99.179 17.6818 99.179 19.1136V19.1818C99.179 20.3068 97.9858 20.4545 94.9517 20.75C91.4972 21.0682 88.3949 22.2273 88.3949 26.125C88.3949 29.5795 90.8608 31.3295 94.1903 31.3295ZM95.5767 27.9886C94.0881 27.9886 93.0199 27.2955 93.0199 25.9659C93.0199 24.6023 94.1449 23.9318 95.8494 23.6932C96.9062 23.5455 98.6335 23.2955 99.2131 22.9091V24.7614C99.2131 26.5909 97.7017 27.9886 95.5767 27.9886ZM114.207 31.2841C117.026 31.2841 118.491 29.6591 119.162 28.2045H119.366V31H124.139V7.72727H119.31V16.4773H119.162C118.514 15.0568 117.116 13.3182 114.196 13.3182C110.366 13.3182 107.128 16.2955 107.128 22.2955C107.128 28.1364 110.23 31.2841 114.207 31.2841ZM115.741 27.4318C113.366 27.4318 112.071 25.3182 112.071 22.2727C112.071 19.25 113.344 17.1705 115.741 17.1705C118.094 17.1705 119.412 19.1591 119.412 22.2727C119.412 25.3864 118.071 27.4318 115.741 27.4318ZM128.119 31H132.96V21.125C132.96 18.9773 134.528 17.5 136.665 17.5C137.335 17.5 138.256 17.6136 138.71 17.7614V13.4659C138.278 13.3636 137.676 13.2955 137.188 13.2955C135.233 13.2955 133.631 14.4318 132.994 16.5909H132.812V13.5455H128.119V31ZM141.213 31H146.054V13.5455H141.213V31ZM143.645 11.2955C145.088 11.2955 146.27 10.1932 146.27 8.84091C146.27 7.5 145.088 6.39773 143.645 6.39773C142.213 6.39773 141.031 7.5 141.031 8.84091C141.031 10.1932 142.213 11.2955 143.645 11.2955ZM159.318 13.5455H155.852V12.375C155.852 11.1932 156.33 10.5 157.75 10.5C158.33 10.5 158.92 10.625 159.307 10.75L160.159 7.11364C159.557 6.93182 158.227 6.63636 156.739 6.63636C153.455 6.63636 151.011 8.48864 151.011 12.2841V13.5455H148.545V17.1818H151.011V31H155.852V17.1818H159.318V13.5455ZM171.56 13.5455H168.276V9.36364H163.435V13.5455H161.048V17.1818H163.435V26.2727C163.412 29.6932 165.741 31.3864 169.253 31.2386C170.503 31.1932 171.389 30.9432 171.878 30.7841L171.116 27.1818C170.878 27.2273 170.366 27.3409 169.912 27.3409C168.946 27.3409 168.276 26.9773 168.276 25.6364V17.1818H171.56V13.5455Z" />
-                                    <rect y="26" width="24" height="5" />
-                                    <rect x="9" y="17" width="15" height="5" />
-                                </svg>
+                                <img src='/marcas/dunlop-bn.jpeg' />
                             </div>
                             {/* <!-- logo - end --> */}
 
                             {/* <!-- logo - start --> */}
                             <div class="flex justify-center text-gray-400">
-                                <svg class="w-auto h-6 sm:h-8 lg:h-10" width="146" height="39" viewBox="0 0 146 39" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M55.0909 7.72727V22.9091C55.0909 26.3182 52.75 28.7727 48.8636 28.7727C44.9773 28.7727 42.6364 26.3182 42.6364 22.9091V7.72727H39.8182V23.1364C39.8182 27.9091 43.3864 31.4091 48.8636 31.4091C54.3409 31.4091 57.9091 27.9091 57.9091 23.1364V7.72727H55.0909ZM63.1733 37.5455H65.8551V28.3182H66.0824C66.6733 29.2727 67.8097 31.3636 71.1733 31.3636C75.5369 31.3636 78.5824 27.8636 78.5824 22.3182C78.5824 16.8182 75.5369 13.3182 71.1278 13.3182C67.7188 13.3182 66.6733 15.4091 66.0824 16.3182H65.7642V13.5455H63.1733V37.5455ZM65.8097 22.2727C65.8097 18.3636 67.5369 15.7273 70.8097 15.7273C74.2188 15.7273 75.9006 18.5909 75.9006 22.2727C75.9006 26 74.1733 28.9545 70.8097 28.9545C67.5824 28.9545 65.8097 26.2273 65.8097 22.2727ZM90.2642 13.5455H86.5369V9.36364H83.8551V13.5455H81.2188V15.8182H83.8551V26.7273C83.8551 29.7727 86.3097 31.2273 88.5824 31.2273C89.5824 31.2273 90.2188 31.0455 90.5824 30.9091L90.0369 28.5C89.8097 28.5455 89.446 28.6364 88.8551 28.6364C87.6733 28.6364 86.5369 28.2727 86.5369 26V15.8182H90.2642V13.5455ZM94.2983 31H96.9801V13.5455H94.2983V31ZM95.6619 10.6364C96.7074 10.6364 97.571 9.81818 97.571 8.81818C97.571 7.81818 96.7074 7 95.6619 7C94.6165 7 93.7528 7.81818 93.7528 8.81818C93.7528 9.81818 94.6165 10.6364 95.6619 10.6364ZM101.892 31H104.574V20.0909C104.574 17.5341 106.438 15.7273 108.528 15.7273C110.562 15.7273 111.983 17.0568 111.983 19.0455V31H114.71V19.6364C114.71 17.3864 116.119 15.7273 118.574 15.7273C120.483 15.7273 122.119 16.7386 122.119 19.3182V31H124.801V19.3182C124.801 15.2159 122.597 13.3182 119.483 13.3182C116.983 13.3182 115.153 14.4659 114.256 16.2727H114.074C113.21 14.4091 111.688 13.3182 109.392 13.3182C107.119 13.3182 105.438 14.4091 104.71 16.2727H104.483V13.5455H101.892V31ZM137.023 31.3636C140.568 31.3636 143.159 29.5909 143.977 26.9545L141.386 26.2273C140.705 28.0455 139.125 28.9545 137.023 28.9545C133.875 28.9545 131.705 26.9205 131.58 23.1818H144.25V22.0455C144.25 15.5455 140.386 13.3182 136.75 13.3182C132.023 13.3182 128.886 17.0455 128.886 22.4091C128.886 27.7727 131.977 31.3636 137.023 31.3636ZM131.58 20.8636C131.761 18.1477 133.682 15.7273 136.75 15.7273C139.659 15.7273 141.523 17.9091 141.523 20.8636H131.58Z" />
-                                    <path d="M16 6L29.8564 30H2.14359L16 6Z" />
-                                </svg>
+                                <img src='/marcas/goodyear-bn.jpeg' />
                             </div>
                             {/* <!-- logo - end --> */}
                         </div>
@@ -208,57 +368,9 @@ const example = ({ cardsWithImg }) => {
                 </div>
                 {/* <!-- logo cloud - end --> */}
 
-                {/* <!-- team - start --> */}
-                <div class=" py-6 sm:py-8 lg:py-12">
-                    <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
-                        {/* <!-- text - start --> */}
-                        <div class="mb-10 md:mb-16">
-                            <h2 class="text-gray-800 text-3xl font-bold text-center mb-4 md:mb-6">Conoceme</h2>
 
-                            <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
-                        </div>
-                        {/* <!-- text - end --> */}
-
-                        <div class="flex justify-center items-center">
-
-                            {/* <!-- person - start --> */}
-                            <div class="flex flex-col items-center bg-gray-100 rounded-lg p-4 lg:p-8">
-                                <div class="w-24 md:w-32 h-24 md:h-32 bg-gray-200 rounded-full overflow-hidden shadow-lg mb-2 md:mb-4">
-                                    <img src="https://images.unsplash.com/photo-1562904403-a5106bef8319?auto=format&q=75&fit=crop&w=256" loading="lazy" alt="Photo by Jernej Graj" class="w-full h-full object-cover object-center" />
-                                </div>
-
-                                <div>
-                                    <div class="text-primary-red md:text-lg font-bold text-center">Micaela</div>
-                                    <p class="text-primary-black text-sm md:text-base text-center mb-3 md:mb-4">Marketing Analyst</p>
-
-                                    {/* <!-- social - start --> */}
-                                    <div class="flex justify-center">
-                                        <div class="flex gap-4">
-                                            <a href="#" target="_blank" class="text-gray-400 hover:text-primary-black active:text-gray-600 transition duration-100">
-                                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                                                </svg>
-                                            </a>
-
-                                            <a href="#" target="_blank" class="text-gray-400 hover:text-primary-black active:text-gray-600 transition duration-100">
-                                                <svg class="w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* <!-- social - end --> */}
-                                </div>
-                            </div>
-                            {/* <!-- person - end --> */}
-                        </div>
-                    </div>
-                </div>
-                {/* <!-- team - end --> */}
 
                 <div class="bg-white py-6 sm:py-8 lg:py-12">
-
-
                     {/* <!-- form - start --> */}
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                         <div class="mb-10 md:mb-16">
@@ -271,27 +383,28 @@ const example = ({ cardsWithImg }) => {
                             <div className='flex flex-col md:flex-row gap-4'>
                                 <div className='w-full'>
                                     <label for="first-name" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Nombre completo</label>
-                                    <input name="first-name" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-primary-red-hover rounded outline-none transition duration-100 px-3 py-2" />
+                                    <input name="first-name" class="w-full bg-gray-200 text-gray-800 border focus:ring ring-primary-black rounded outline-none transition duration-100 px-3 py-2" />
                                 </div>
                                 <div class="sm:col-span-2 w-full">
                                     <label for="email" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Email</label>
-                                    <input name="email" class="w-full bg-gray-50 text-gray-800 border focus:ring ring-primary-red-hover rounded outline-none transition duration-100 px-3 py-2" />
+                                    <input name="email" class="w-full bg-gray-200 text-gray-800 border focus:ring ring-primary-black rounded outline-none transition duration-100 px-3 py-2" />
                                 </div>
                             </div>
 
                             <div class="sm:col-span-2">
                                 <label for="message" class="inline-block text-gray-800 text-sm sm:text-base mb-2">Mensaje</label>
-                                <textarea name="message" class="w-full h-28 md:h-44 bg-gray-50 text-gray-800 border focus:ring ring-primary-red-hover rounded outline-none transition duration-100 px-3 py-2 resize-none"></textarea>
+                                <textarea name="message" class="w-full h-28 md:h-36 bg-gray-200 text-gray-800 border focus:ring ring-primary-black rounded outline-none transition duration-100 px-3 py-2 resize-none"></textarea>
+                            </div>
+
+                            <div className='flex flex-row items-center gap-1'>
+                                <input type="checkbox" name="" id="" className="inline-block" />
+                                <p class="text-gray-400 text-xs">Aceptar los tÃƒÂ©rminos y condiciones.</p>
                             </div>
 
                             <div class="sm:col-span-2 flex justify-between items-center">
-                                <button class="inline-block bg-primary-red hover:bg-indigo-600 active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Enviar</button>
+                                <button class="inline-block bg-primary-red hover:bg-primary-red-hover active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Enviar</button>
                             </div>
 
-                            <div className='flex flex-row gap-3'>
-                                <input type="checkbox" name="" id="" className="inline-block" />
-                                <p class="text-gray-400 text-xs">Aceptar los términos y condiciones.</p>
-                            </div>
                         </form>
                         {/* <!-- form - end --> */}
                     </div>
@@ -309,22 +422,22 @@ export async function getStaticProps() {
                 {
                     title: "Te Recomendamos lo que Necesitas no lo que quieres oir",
                     body: [
-                        "Somos un emprendimiento dinÃ¡mico e innovador, con una alta proyecciÃ³n a nivel nacional, con la que contamos con una amplia red de proveedores para tu entera disposiciÃ³n."
+                        "Somos un emprendimiento dinÃƒÆ’Ã‚Â¡mico e innovador, con una alta proyecciÃƒÆ’Ã‚Â³n a nivel nacional, con la que contamos con una amplia red de proveedores para tu entera disposiciÃƒÆ’Ã‚Â³n."
                     ],
                     textColor: "text-primary-white",
                     image: {
                         url: "/images/neumaticos/neumaticos.jpg",
                         left: false,
-                        alt: "Compra tus neumÃ¡ticos en Neucrist"
+                        alt: "Compra tus neumÃƒÆ’Ã‚Â¡ticos en Neucrist"
                     },
                     background: "bg-black",
                     btnDark: false,
-                    btnMsg: "Saber mÃ¡s"
+                    btnMsg: "Saber mÃƒÆ’Ã‚Â¡s"
                 },
                 {
                     title: "+ 1000 familias ayudadas",
                     body: [
-                        "Te ayudamos dando la atenciÃ³n y el respeto que te mereces. Nuestro objetivo es mejorar su calidad de confiabilidad, apostando por el bienestar y confort"
+                        "Te ayudamos dando la atenciÃƒÆ’Ã‚Â³n y el respeto que te mereces. Nuestro objetivo es mejorar su calidad de confiabilidad, apostando por el bienestar y confort"
                     ],
                     textColor: "text-primary-black",
                     image: {
@@ -334,12 +447,12 @@ export async function getStaticProps() {
                     },
                     background: "",
                     btnDark: false,
-                    btnMsg: "Saber mÃ¡s"
+                    btnMsg: "Saber mÃƒÆ’Ã‚Â¡s"
                 },
                 {
-                    title: "Expertos ayudÃ¡ndote",
+                    title: "Expertos ayudÃƒÆ’Ã‚Â¡ndote",
                     body: [
-                        "Contamos con personas capacitadas que te ayudarÃ¡n a tomar la mejor decisiÃ³n."
+                        "Contamos con personas capacitadas que te ayudarÃƒÆ’Ã‚Â¡n a tomar la mejor decisiÃƒÆ’Ã‚Â³n."
                     ],
                     textColor: "text-primary-white",
                     image: {
@@ -349,7 +462,7 @@ export async function getStaticProps() {
                     },
                     background: "bg-primary-red",
                     btnDark: true,
-                    btnMsg: "Saber mÃ¡s"
+                    btnMsg: "Saber mÃƒÆ’Ã‚Â¡s"
                 }
             ]
         }
