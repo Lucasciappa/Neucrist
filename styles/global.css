@@ -26,6 +26,9 @@
   transition: all 0.3 ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /*
     -remove the classes below if you have the 'group-hover'property added in your tailwind config file
     -also remove the class from the html template

@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import HeroImage from '../components/HeroImage';
 import Layout from '../components/Layout';
 import SmallCards from '../components/SmallCards';
 import ValuesCard from '../components/ValuesCard';
@@ -8,50 +9,19 @@ const IndexPage = () => {
         <>
             <Header />
             <Layout>
+                <HeroImage />
                 <SmallCards />
 
-                {/* about  */}
-                <h2 class="text-gray-800 text-4xl font-bold text-center my-8">Sobre Nosotros</h2>
-
-                <div
-                    class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-6 max-w-7xl"
-                >
-
-                    <div class="my-auto flex flex-col gap-3">
-                        <p class="text-primary-black">
-                            Nos dedicamos a asesorar, gestionar y buscar a travÃ©s de nuestra
-                            pÃ¡gina web los mejores productos para tu rodado
-                        </p>
-                        <p class="text-primary-black">Nuestra prioridad y nuestro firme compromiso es ofrecer a nuestros clientes calidad sin cortapisas.
-
-                        </p>
-                        <p class="text-primary-black">
-                            Nos diferenciamos porque apostamos por la implantaciÃ³n de
-                            herramientas online que mejoran su experiencia
-                        </p>
-                        <p class="text-primary-black">
-                            Te invitamos a ponerte en contacto con nosotros o bien a travÃ©s
-                            de nuestras redes sociales, telÃ©fono .. o lo que sea
-                            mÃ¡s cÃ³modo para ti.
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <div class="h-full rounded-full overflow-hidden">
-                            <img src="/images/neumaticos/neu1.jpg" loading="lazy" alt="quienes somos picture" className="w-full h-full object-cover object-center" />
-                        </div>
-                    </div>
-                </div>
-                <ValuesCard />
-                {/* fin about */}
-
                 {/* <!-- features - start --> */}
-                <div class="py-6 sm:py-8 lg:py-12">
+                <div class="py-6 md:py-20" id="servicios">
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                         {/* <!-- text - start --> */}
-                        <div class="mb-10 md:mb-16">
+                        <div class="mb-10 md:mb-4">
                             <h2 class="text-gray-800 text-3xl font-bold text-center mb-4 md:mb-6">Nuestra ventaja competitiva</h2>
 
-                            <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y asÃƒÂ­ poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicaciÃƒÂ³n para el servicio de Cristales y Neumaticos. </p>
+                            <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y así­ poder estar a la vanguardia y
+                                poder brindar la mejor experiencia posible. Mucha dedicación
+                                para el servicio de Cristales y Neumaticos.{" "}</p>
                         </div>
                         {/* <!-- text - end --> */}
 
@@ -112,8 +82,10 @@ const IndexPage = () => {
                                 </div>
 
                                 <div>
-                                    <h3 class="text-lg md:text-xl font-semibold mb-2">CotizaciÃƒÂ³n en lÃƒÂ­nea</h3>
-                                    <p class="text-primary-black mb-2">Presentamos una manera fÃƒÂ¡cil de garantizar precios, favoreciendo, a su vez, la difusiÃƒÂ³n de presupuestos y compras en su negocio.</p>
+                                    <h3 class="text-lg md:text-xl font-semibold mb-2">Cotización en línea</h3>
+                                    <p class="text-primary-black mb-2">Presentamos una manera fácil de garantizar precios,
+                                        favoreciendo, a su vez, la difusión de presupuestos y
+                                        compras en su negocio.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4 md:gap-6">
@@ -140,7 +112,9 @@ const IndexPage = () => {
 
                                 <div>
                                     <h3 class="text-lg md:text-xl font-semibold mb-2">Colocaciones y Arreglos</h3>
-                                    <p class="text-primary-black mb-2">Gracias a nuestros expertos realizamos cambio de parabrisas, polarizados y neumÃƒÂ¡ticos en el momento para que puedas volver al ruedo en el momento deseado.</p>
+                                    <p class="text-primary-black mb-2">Gracias a nuestros expertos realizamos cambio de parabrisas,
+                                        polarizados y neumáticos en el momento para que puedas
+                                        volver al ruedo en el momento deseado.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4 md:gap-6">
@@ -206,8 +180,9 @@ const IndexPage = () => {
                                 </div>
 
                                 <div>
-                                    <h3 class="text-lg md:text-xl font-semibold mb-2">LogÃƒÂ­stica</h3>
-                                    <p class="text-primary-black mb-2">Nos comprometemos a un servicio de logÃƒÂ­stica propia para garantizar entregas eficaces y sin problemas.</p>
+                                    <h3 class="text-lg md:text-xl font-semibold mb-2">Logística</h3>
+                                    <p class="text-primary-black mb-2">Nos comprometemos a un servicio de logística propia para
+                                        garantizar entregas eficaces y sin problemas.</p>
                                 </div>
                             </div>
 
@@ -235,7 +210,9 @@ const IndexPage = () => {
 
                                 <div>
                                     <h3 class="text-lg md:text-xl font-semibold mb-2">Asesoramiento</h3>
-                                    <p class="text-primary-black mb-2">Recibimos tu contacto e informaciÃƒÂ³n a traves de nuestro Whatsapp para que podamos ayudarte de la manera mas rÃƒÂ¡pida y eficiente.</p>
+                                    <p class="text-primary-black mb-2">Recibimos tu contacto e información a traves de nuestro
+                                        Whatsapp para que podamos ayudarte de la manera mas
+                                        rápida y eficiente.</p>
                                 </div>
                             </div>
 
@@ -244,15 +221,17 @@ const IndexPage = () => {
                 </div>
                 {/* <!-- features - end --> */}
 
-                <div className=' pb-6 sm:pb-8 lg:pb-12'>
+                <div className=' pb-6 sm:pb-8' id="productos">
                     <div className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
 
-                        <h2 class="text-gray-800 text-4xl font-bold text-center mb-4">Productos</h2>
+                        <h2 class="text-gray-800 text-4xl font-bold text-center my-4">Productos</h2>
 
-                        <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y asÃƒÂ­ poder estar a la vanguardia y poder brindar la mejor experiencia posible. Mucha dedicaciÃƒÂ³n para el servicio de Cristales y Neumaticos. </p>
+                        <p class="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">Llegamos para competir y así­ poder estar a la vanguardia y
+                            poder brindar la mejor experiencia posible. Mucha dedicación
+                            para el servicio de Cristales y Neumáticos.{" "}</p>
 
                         <div className=" pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
-                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-red rounded-xl">
+                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
                                         <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Cristales</h6>
@@ -274,10 +253,10 @@ const IndexPage = () => {
                         </div>
 
                         <div className=" pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
-                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-red rounded-xl">
+                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
-                                        <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Neumaticos</h6>
+                                        <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Neumáticos</h6>
 
                                         <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
                                     </div>
@@ -295,8 +274,8 @@ const IndexPage = () => {
                             </section>
                         </div>
 
-                        <div className=" pb-1 my-6 sm:pb-8 lg:pb-12 rounded-lg">
-                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-red rounded-xl">
+                        <div className=" pb-1 my-6 rounded-lg">
+                            <section className="max-w-screen-2xl p-4 md:px-8 mx-auto bg-primary-black rounded-xl">
                                 <div className="flex flex-wrap justify-between mb-4">
                                     <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
                                         <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">Autopartes</h6>
@@ -320,13 +299,15 @@ const IndexPage = () => {
                     </div>
                 </div>
 
-
+                <div id="about">
+                    <ValuesCard />
+                </div>
 
 
                 {/* <!-- logo cloud - start --> */}
                 <div class=" py-6 sm:py-8 lg:py-12">
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-                        <h2 class="text-gray-800 text-3xl font-bold text-center mb-8">Marcas que confÃƒÂ­an</h2>
+                        <h2 class="text-gray-800 text-3xl font-bold text-center mb-8">Marcas que confían</h2>
 
                         <div class="sm:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly bg-gray-100 rounded-lg gap-6 p-6">
                             {/* <!-- logo - start --> */}
@@ -359,13 +340,13 @@ const IndexPage = () => {
 
 
 
-                <div class="bg-white py-6 sm:py-8 lg:py-12">
+                <div class="bg-primary-red-light py-6 sm:py-8 lg:py-12" id="contacto">
                     {/* <!-- form - start --> */}
                     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                         <div class="mb-10 md:mb-16">
-                            <h2 class="text-gray-800 text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6">Contactanos</h2>
+                            <h2 class="text-gray-800 text-3xl md:text-4xl font-bold text-center mb-4">Contactanos</h2>
 
-                            <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">Te ayudamos en lo que necesites</p>
+                            <p class="max-w-screen-md text-gray-700 md:text-lg text-center mx-auto">Te ayudamos en lo que necesites</p>
                         </div>
 
                         <form class="max-w-screen-md flex flex-col gap-4 mx-auto">
@@ -387,7 +368,7 @@ const IndexPage = () => {
 
                             <div className='flex flex-row items-center gap-1'>
                                 <input type="checkbox" name="" id="" className="inline-block" />
-                                <p class="text-gray-400 text-xs">Aceptar los tÃƒÂ©rminos y condiciones.</p>
+                                <p class="text-gray-900 text-xs">Aceptar los términos y condiciones.</p>
                             </div>
 
                             <div class="sm:col-span-2 flex justify-between items-center">

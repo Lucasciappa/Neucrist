@@ -6,7 +6,7 @@ const Footer = () => {
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-4 lg:pt-12 mb-16">
           <div class="col-span-full lg:col-span-2">
 
-            <p class="text-gray-400 sm:pr-8 mb-6">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+            <p class="text-gray-400 sm:pr-8 mb-6">Queremos tener la mejor confianza hacia el cliente, por eso te invitamos a conectar</p>
 
             {/* <!-- social - start --> */}
             <div class="flex gap-4">
@@ -43,11 +43,11 @@ const Footer = () => {
 
             <nav class="flex flex-col gap-4">
               <div>
-                <a href="#" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Visión</a>
+                <a href="#about" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Visión</a>
               </div>
 
               <div>
-                <a href="#" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Clientes</a>
+                <a href="#about" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Clientes</a>
               </div>
             </nav>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
 
             <nav class="flex flex-col gap-4">
               <div>
-                <a href="#" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Sobre Nosotros</a>
+                <a href="#about" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Sobre Nosotros</a>
               </div>
 
               <div>
@@ -76,11 +76,11 @@ const Footer = () => {
 
             <nav class="flex flex-col gap-4">
               <div>
-                <a href="#" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Contacto</a>
+                <a href="#contacto" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Contacto</a>
               </div>
 
               <div>
-                <a href="#" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Preguntas</a>
+                <a href="#contacto" class="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Preguntas</a>
               </div>
             </nav>
           </div>
