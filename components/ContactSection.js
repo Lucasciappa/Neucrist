@@ -11,7 +11,7 @@ const ContactSection = () => {
                     <p className="max-w-screen-md text-gray-700 md:text-lg text-center mx-auto">Te ayudamos en lo que necesites</p>
                 </div>
 
-                <form className="max-w-screen-md flex flex-col gap-4 mx-auto">
+                <form action="https://formsubmit.co/161756dcc2db09f9ba4bef9362f39ba7" method="POST" className="max-w-screen-md flex flex-col gap-4 mx-auto">
                     <div className='flex flex-col md:flex-row gap-4'>
                         <div className='w-full'>
                             <label for="first-name" className="inline-block text-gray-800 text-sm sm:text-base mb-2">Nombre completo</label>
@@ -29,14 +29,13 @@ const ContactSection = () => {
                     </div>
 
                     <div className='flex flex-row items-center gap-1'>
-                        <input type="checkbox" name="" id="" className="inline-block" />
+                        <input type="checkbox" name="terms" id="" className="inline-block" />
                         <p className="text-gray-900 text-xs">Aceptar los términos y condiciones.</p>
                     </div>
 
                     <div className="sm:col-span-2 flex justify-between items-center">
-                        <button className="inline-block bg-primary-red hover:bg-primary-red-hover active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Enviar</button>
+                        <button type='submit' className="inline-block bg-primary-red hover:bg-primary-red-hover active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Enviar</button>
                     </div>
-
                 </form>
                 {/* <!-- form - end --> */}
             </div>

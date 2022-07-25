@@ -23,29 +23,28 @@ const Nav = () => {
         <button type="button" className="inline-flex items-center lg:hidden bg-primary-dark hover:bg-gray-200 focus-visible:ring ring-indigo-300 text-primary-red active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
           <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
           <label htmlFor="abrir-cerrar" className="toggle-button" />
-          Menu
-          <div className="bg-primary-dark w-full h-72 absolute z-50 left-0 top-20 hamburguer shadow-shadow-bot" >
+          <div className="bg-primary-dark w-full h-60 absolute z-50 left-0 top-20 hamburguer shadow-shadow-bot" >
             <div className="my-5 text-center">
-              <Link href="#about">
+              <a href="#about">
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Quienes Somos
                 </p>
-              </Link>
-              <Link href="#productos">
+              </a>
+              <a href="#productos">
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Productos
                 </p>
-              </Link>
-              <Link href="#servicios">
+              </a>
+              <a href="#servicios">
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Servicios
                 </p>
-              </Link>
-              <Link href="#contacto">
+              </a>
+              <a href="#contacto">
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Contacto
                 </p>
-              </Link>
+              </a>
             </div>
           </div>
         </button>
