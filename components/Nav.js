@@ -5,20 +5,20 @@ const Nav = () => {
 
   return (
     <>
-      <header class="flex justify-between items-center bg-primary-dark py-1 md:py-2 px-4 md:px-8 mx-auto sticky top-0 z-50 shadow-shadow-bot">
+      <header className="flex justify-between items-center bg-primary-dark py-1 md:py-2 px-4 md:px-8 mx-auto sticky top-0 z-50 shadow-shadow-bot">
         <a href="#">
             <img src="/images/iconos/logo-neucrist.png" loading="lazy" alt="Neucrist Logo Picture" className="w-24 h-auto" />
             {/* <Image src="/images/logo-neucrist.png" alt="Neucrist Logo Picture" width={90} height={90} objectFit="cover" /> */}
         </a>
 
-        <nav class="hidden lg:flex gap-12">
+        <nav className="hidden lg:flex gap-12">
           <a href="#" className="text-primary-red text-lg font-semibold">Inicio</a>
           <a href="#about" className="text-gray-600 hover:text-primary-red active:text-indigo-700 text-lg font-semibold transition duration-100">Quienes Somos</a>
           <a href="#productos" className="text-gray-600 hover:text-primary-red active:text-indigo-700 text-lg font-semibold transition duration-100">Productos</a>
           <a href="#servicios" className="text-gray-600 hover:text-primary-red active:text-indigo-700 text-lg font-semibold transition duration-100">Servicios</a>
         </nav>
 
-        <a href="#contacto" class="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contacto</a>
+        <a href="#contacto" className="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contacto</a>
 
         <button type="button" className="inline-flex items-center lg:hidden bg-primary-dark hover:bg-gray-200 focus-visible:ring ring-indigo-300 text-primary-red active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
           <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />

@@ -20,7 +20,7 @@ module.exports = {
         'primary': {
           'red': '#C22C0D',
           'red-hover': '#C22C0Dea',
-          'red-light': '#C22C0D33',
+          'red-light': '#C22C0D77',
           'yellow': '·F7C700',
           'black': '#2a2a2a',
           'white': '#FFFFFF',
