@@ -3,6 +3,12 @@ import Image from "next/image";
 
 const Nav = () => {
 
+  const closeModal = (e) => {
+    const button = document.querySelector("#abrir-cerrar")
+    button.click()
+    console.log(button);
+  }
+
   return (
     <>
       <header className="flex justify-between items-center bg-primary-dark py-1 md:py-2 px-4 md:px-8 mx-auto sticky top-0 z-50 shadow-shadow-bot">
@@ -18,29 +24,29 @@ const Nav = () => {
           <a href="#servicios" className="text-gray-600 hover:text-primary-red active:text-indigo-700 text-lg font-semibold transition duration-100">Servicios</a>
         </nav>
 
-        <a href="#contacto" className="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contacto</a>
+        <a href="#contacto" className="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover text-white text-sm md:text-base font-semibold text-center outline-none transition duration-100 px-8 py-3">Contacto</a>
 
-        <button type="button" className="inline-flex items-center lg:hidden bg-primary-dark hover:bg-gray-200 focus-visible:ring ring-indigo-300 text-primary-red active:text-gray-700 text-sm md:text-base font-semibold rounded-lg gap-2 px-2.5 py-2">
+        <button type="button" className="inline-flex items-center lg:hidden bg-primary-dark text-primary-red text-sm md:text-base font-semibold gap-2 px-2.5 py-2">
           <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />
           <label htmlFor="abrir-cerrar" className="toggle-button" />
-          <div className="bg-primary-dark w-full h-60 absolute z-50 left-0 top-20 hamburguer shadow-shadow-bot" >
+          <div className="bg-primary-dark w-full h-60 absolute z-50 left-0 top-24 hamburguer shadow-shadow-bot" >
             <div className="my-5 text-center">
-              <a href="#about">
+              <a href="#about" onClick={closeModal}>
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Quienes Somos
                 </p>
               </a>
-              <a href="#productos">
+              <a href="#productos" onClick={closeModal}>
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Productos
                 </p>
               </a>
-              <a href="#servicios">
+              <a href="#servicios" onClick={closeModal}>
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Servicios
                 </p>
               </a>
-              <a href="#contacto">
+              <a href="#contacto" onClick={closeModal}>
                 <p className="font-primary text-xl cursor-pointer font-semibold w-full py-3 hover:bg-gray-300">
                   Contacto
                 </p>
@@ -53,7 +59,7 @@ const Nav = () => {
         <div>
           <a
             title="Mandanos un mensaje"
-            href="https://api.whatsapp.com/send/?phone=01131063791&text=Hola+Neucrist%21%0D%0A%0D%0AQuiero+saber+mas+informaci%C3%B3n+sobre+-+https%3A%2F%2Fgransliving.com%2F&app_absent=0"
+            href="https://wa.me/541167996363?text=Hola%20quiero%20mas%20info!!%20"
             target="_blank"
             className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12 relative"
           >

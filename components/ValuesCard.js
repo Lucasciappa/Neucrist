@@ -3,81 +3,45 @@ import React from "react";
 const ValuesCard = () => {
     return (
         <>
-
-            {/* about  */}
-            <section className='pt-28 -mb-20' id="about">
-                <h2 className="text-gray-800 text-4xl font-bold text-center my-5">Sobre Nosotros</h2>
-                <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-4 max-w-7xl" >
-                    <div className="my-auto flex flex-col gap-3">
-                        <p className="text-primary-black">
-                            Somos una empresa que nace con grandes sueños en plena pandemia,
-                            con el compromiso de hacer las cosas bien desde el comienzo y
-                            siempre.
-                        </p>
-                        <p className="text-primary-black">Por eso y para ello las personas que componen NEUCRIST
-                            comparten la pasión, visión y el deseo de satisfacer las
-                            necesidades de los clientes.
-
-                        </p>
-                        <p className="text-primary-black">
-                            A través de un servicio diferencial,
-                            con productos de alta calidad, avalados por marcas prestigiosas y
-                            servicio de logística propia.
-                        </p>
-                        <p className="text-primary-black">
-                            Te invitamos a ponerte en contacto con nosotros o bien a través
-                            de nuestras redes sociales, teléfono, o lo que sea
-                            más cómodo para ti.
-                        </p>
-                    </div>
-                    <div className="relative">
-                        <div className="h-full rounded-full overflow-hidden">
-                            <img src="/images/neumaticos/neu1.jpg" loading="lazy" alt="quienes somos picture" className="w-full h-full object-cover object-center" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* fin about */}
             <section className="mx-auto pt-28 -mb-20">
-                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto">
+                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto">
                     <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
                         <img className="mx-auto m-2 w-40" src="./images/transparentes/corazon.png" alt="Pasion" />
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Pasión
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            Queremos transmitirte nuestro entusiasmo y conocimiento para que vivas de la misma forma que nosotros la pasión que tenemos por este rubro.
                         </p>
                     </article>
 
                     <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2 w-40" src="./images/transparentes/vision.png" alt="" />
+                        <img className="mx-auto m-2 w-40" src="./images/transparentes/vision.png" alt="Visión" />
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Visión
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            Nuestro objetivo es innovar día a día para poder brindarte la mejor experiencia.
                         </p>
                     </article>
 
                     <article className="mx-auto max-w-sm pb-8 bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2 w-40" src="./images/transparentes/calidad.png" alt="" />
+                        <img className="mx-auto m-2 w-40" src="./images/transparentes/calidad.png" alt="Productos de alta calidad" />
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Productos de alta calidad
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            Nos aliamos con las principales marcas del mundo para asegurar la mejor calidad del mercado.
                         </p>
                     </article>
 
                     <article className="mx-auto max-w-sm pb-8 bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2S w-40" src="./images/transparentes/logistica.png" alt="Logistica" />
+                        <img className="mx-auto m-2S w-40" src="./images/transparentes/logistica.png" alt="Trabajo en equipo" />
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
-                            Servicio de logística propia
+                            Trabajo en equipo
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            Gracias a las personas que integran esta empresa y su trabajo en conjunto, es que somos capaces de evolucionar todos los días para entregar nada mas que excelencia a nuestros clientes.
                         </p>
                     </article>
                 </section>

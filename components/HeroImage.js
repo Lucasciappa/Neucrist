@@ -15,8 +15,8 @@ const props = {
 const HeroImage = () => {
     return (
         <div className="max-w-screen-2xl p-4 md:px-8 mx-auto z-20">
-            <section className="flex justify-center items-center flex-1  max-w-screen-2xl shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative py-16 xl:py-48">
-                <div className="absolute inset-0 h-full">
+            <section className="flex justify-center items-center flex-1  max-w-screen-2xl shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative h-96 md:h-128">
+                <div className="absolute inset-0 h-auto">
                     <Slide easing="ease" {...props} className="w-full">
                         <div className="each-slide">
                             <div className="absolute inset-0 bg-black bg-opacity-20 transition duration-300 ease-in-out"></div>
