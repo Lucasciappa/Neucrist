@@ -20,7 +20,7 @@ module.exports = {
         'primary': {
           'red': '#C22C0D',
           'red-hover': '#C22C0Dea',
-          'red-light': '#C22C0Daa',
+          'red-light': '#C22C0Ddd',
           'yellow': '·F7C700',
           'black': '#2a2a2a',
           'white': '#FFFFFF',
@@ -34,16 +34,6 @@ module.exports = {
         backgroundImage: {
           "about": "url('/images/productos/neumaticos2.jpg')"
         },
-        spacing: {
-          "18": "68px",
-          "19": "72px",
-          "21": "80px",
-          "112": "29rem",
-          "128": "32rem",
-          "152": "38rem",
-          "172": "43rem",
-          "192": "48rem"
-        },
         'text': {
           'primary': '#222222',
           'secundary': '#767676',
@@ -56,7 +46,17 @@ module.exports = {
           'warning': '#FFBC2C',
           'coral': '#EE7764'
         }
-      }
+      },
+      spacing: {
+        "18": "68px",
+        "19": "72px",
+        "21": "80px",
+        "112": "29rem",
+        "128": "32rem",
+        "152": "38rem",
+        "172": "43rem",
+        "192": "48rem"
+      },
     },
     fontFamily: {
       primary: ['Lato', 'sans-serif']

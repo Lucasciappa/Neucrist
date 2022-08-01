@@ -24,7 +24,7 @@ const Nav = () => {
           <a href="#servicios" className="text-gray-600 hover:text-primary-red active:text-indigo-700 text-lg font-semibold transition duration-100">Servicios</a>
         </nav>
 
-        <a href="#contacto" className="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover text-white text-sm md:text-base font-semibold text-center outline-none transition duration-100 px-8 py-3">Contacto</a>
+        <a href="#contacto" className="hidden lg:inline-block bg-primary-red hover:bg-primary-red-hover focus-visible:ring ring-indigo-300 text-white active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contacto</a>
 
         <button type="button" className="inline-flex items-center lg:hidden bg-primary-dark text-primary-red text-sm md:text-base font-semibold gap-2 px-2.5 py-2">
           <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" />

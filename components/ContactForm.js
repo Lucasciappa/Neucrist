@@ -33,7 +33,7 @@ export const ContactForm = () => {
       {inputFieldValues.map((inputFieldValue, index) => {
         return (
           <div className="flex flex-col max-w-lg mx-auto" key={index}>
-            <label htmlFor={inputFieldValue.name} className="inline-block text-gray-800 text-sm sm:text-base mt-2">{inputFieldValue.label}</label>
+            <label htmlFor={inputFieldValue.name} className="inline-block text-gray-900 text-sm sm:text-base mt-2 font-semibold">{inputFieldValue.label}</label>
             <input
               className={`${inputFieldValue.multiline && "h-24"} w-full bg-gray-200 text-gray-800 border focus:ring ring-primary-black rounded outline-none transition duration-100 px-3 py-2`}
               onBlur={handleInputValue}
