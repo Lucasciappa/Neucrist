@@ -1,12 +1,17 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ErrorPage = () => {
     return (
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                 <div class="w-full sm:w-96 h-96 flex justify-center items-center bg-gray-100 shadow-lg rounded-lg overflow-hidden relative mx-auto">
-                    <img src="/images/neumaticos/neu6.jpg" loading="lazy" alt="Photo by Connor Botts" class="w-full h-full object-cover object-center absolute inset-0" />
-
+                    <Image
+                        class="w-full h-full object-cover object-center absolute inset-0"
+                        src="/images/neumaticos/neu6.jpg"
+                        alt="404 Pictures"
+                        layout='fill'
+                    />
                     <div class="flex flex-col justify-center items-center relative p-8 md:p-16">
                         <h1 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2">404</h1>
 

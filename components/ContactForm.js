@@ -1,4 +1,5 @@
 import { useFormControls } from "../hooks/useFormControls";
+import Image from "next/image";
 
 const inputFieldValues = [
   {
@@ -57,9 +58,15 @@ export const ContactForm = () => {
           Enviar
         </button>
         {
-          isLoading &&
+          !isLoading &&
         <div>
-          <img src="/images/iconos/loader.svg" alt="Enviando..." />
+          <Image
+            src="/images/iconos/loader.svg"
+            alt="Enviando..."
+            width={50}
+            height={50}
+          />
+          
         </div>
         }
       </div>

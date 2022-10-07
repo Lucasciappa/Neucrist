@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const BrandsSection = () => {
     return (
@@ -8,28 +9,48 @@ const BrandsSection = () => {
                 <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
                     <h2 className="text-gray-800 text-3xl font-bold text-center mb-8">Marcas que confían</h2>
 
-                    <div className="sm:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly bg-gray-100 rounded-lg gap-6 p-6">
+                    <div className="xs:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly bg-gray-100 rounded-lg gap-6 p-6">
                         {/* <!-- logo - start --> */}
                         <div className="flex justify-center text-gray-400">
-                            <img src='/marcas/bfgoodrich-bn.jpeg' />
+                            <Image
+                                src='/marcas/bfgoodrich-bn.jpeg'
+                                alt="Quienes somos picture"
+                                width={650}
+                                height={220}
+                            />
                         </div>
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
                         <div className="flex justify-center text-gray-400">
-                            <img src='/marcas/continental-bn.jpeg' />
+                            <Image
+                                src='/marcas/continental-bn.jpeg'
+                                alt="Quienes somos picture"
+                                width={650}
+                                height={220}
+                            />
                         </div>
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
                         <div className="flex justify-center text-gray-400">
-                            <img src='/marcas/dunlop-bn.jpeg' />
+                            <Image
+                                src='/marcas/dunlop-bn.jpeg'
+                                alt="Quienes somos picture"
+                                width={650}
+                                height={220}
+                            />
                         </div>
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
                         <div className="flex justify-center text-gray-400">
-                            <img src='/marcas/goodyear-bn.jpeg' />
+                            <Image
+                                src='/marcas/goodyear-bn.jpeg'
+                                alt="Quienes somos picture"
+                                width={650}
+                                height={220}
+                            />
                         </div>
                         {/* <!-- logo - end --> */}
                     </div>

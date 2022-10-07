@@ -1,5 +1,6 @@
 import React from 'react'
 import ValuesCard from './ValuesCard'
+import Image from 'next/image'
 
 const AboutSection = () => {
     return (
@@ -32,7 +33,12 @@ const AboutSection = () => {
                     </div>
                     <div className="relative">
                         <div className="h-full rounded-full overflow-hidden">
-                            <img src="/images/neumaticos/neu1.jpg" loading="lazy" alt="quienes somos picture" className="w-full h-full object-cover object-center" />
+                            <Image
+                                src="/images/neumaticos/neu1.jpg"
+                                alt="Quienes somos picture"
+                                width={800}
+                                height={500}
+                                />
                         </div>
                     </div>
                 </div>

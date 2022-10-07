@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 
 const ValuesCard = () => {
     return (
@@ -6,7 +7,15 @@ const ValuesCard = () => {
             <section className="mx-auto pt-28 -mb-20">
                 <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto">
                     <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2 w-40" src="./images/transparentes/corazon.png" alt="Pasion" />
+                        <div className="flex justify-center items-center">
+
+                            <Image
+                                src="/images/transparentes/corazon.png"
+                                alt="Pasion"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Pasión
                         </h2>
@@ -16,7 +25,14 @@ const ValuesCard = () => {
                     </article>
 
                     <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2 w-40" src="./images/transparentes/vision.png" alt="Visión" />
+                        <div className="flex justify-center items-center">
+                            <Image
+                                src="/images/transparentes/vision.png"
+                                alt="Visión"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Visión
                         </h2>
@@ -26,7 +42,16 @@ const ValuesCard = () => {
                     </article>
 
                     <article className="mx-auto max-w-sm pb-8 bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2 w-40" src="./images/transparentes/calidad.png" alt="Productos de alta calidad" />
+                        <div className="flex justify-center items-center">
+                            <div className="flex justify-center items-center">
+                                <Image
+                                    src="/images/transparentes/calidad.png"
+                                    alt="Productos de alta calidad"
+                                    width={150}
+                                    height={150}
+                                />
+                            </div>
+                        </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Productos de alta calidad
                         </h2>
@@ -36,7 +61,15 @@ const ValuesCard = () => {
                     </article>
 
                     <article className="mx-auto max-w-sm pb-8 bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
-                        <img className="mx-auto m-2S w-40" src="./images/transparentes/logistica.png" alt="Trabajo en equipo" />
+                        <div className="flex justify-center items-center">
+
+                            <Image
+                                src="/images/transparentes/logistica.png"
+                                alt="Trabajo en equipo"
+                                width={150}
+                                height={150}
+                            />
+                        </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
                             Trabajo en equipo
                         </h2>
