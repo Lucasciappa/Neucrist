@@ -58,7 +58,7 @@ export const ContactForm = () => {
           Enviar
         </button>
         {
-          !isLoading &&
+          isLoading &&
         <div>
           <Image
             src="/images/iconos/loader.svg"

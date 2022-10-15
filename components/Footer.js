@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <div className="bg-primary-black">
       <footer className="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-4 lg:pt-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-4 lg:pt-12 mb-16 font-primary">
           <div className="col-span-full lg:col-span-2">
 
             <p className="text-gray-400 sm:pr-8 mb-2">Queremos tener la mejor confianza hacia el cliente, por eso te invitamos a conectar</p>
@@ -44,7 +44,7 @@ const Footer = () => {
 
             <nav className="flex flex-col gap-4">
               <div>
-                <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Visión</a>
+                <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Vision</a>
               </div>
 
               <div>
@@ -56,7 +56,7 @@ const Footer = () => {
 
           {/* <!-- nav - start --> */}
           <div>
-            <div className="text-gray-100 font-bold tracking-widest uppercase mb-4">Companía</div>
+            <div className="text-gray-100 font-bold tracking-widest uppercase mb-4">Compania</div>
 
             <nav className="flex flex-col gap-4">
               <div>
@@ -93,11 +93,11 @@ const Footer = () => {
 
             <nav className="flex flex-col gap-4">
               <div>
-                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Términos y Servicios</a>
+                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Terminos y Servicios</a>
               </div>
 
               <div>
-                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Política de Privacidad</a>
+                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Politica de Privacidad</a>
               </div>
             </nav>
           </div>
@@ -113,11 +113,11 @@ const Footer = () => {
           <form className="w-full md:max-w-md flex gap-2">
             <input placeholder="Email" className="w-full flex-1 bg-gray-50 text-gray-800 placeholder-gray-500 focus:ring ring-primary-red rounded outline-none transition duration-100 px-3 py-2" />
 
-            <button className="inline-block bg-primary-red hover:bg-primary-red-hover active:primary-red-hover  focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Send</button>
+            <button className="inline-block bg-primary-red hover:bg-primary-red-hover active:primary-red-hover  focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2">Enviar</button>
           </form>
         </div>
 
-        <div className="text-gray-400 text-sm text-center border-t border-gray-800 py-8">Copyright © 2022 LyC Creative.</div>
+        <div className="text-gray-400 text-sm text-center py-8">Copyright © 2022 LyC Creative.</div>
       </footer>
     </div>
   );

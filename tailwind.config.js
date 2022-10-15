@@ -59,7 +59,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      primary: ['Lato', 'sans-serif']
+      primary: ['Market Deco', 'sans-serif']
     }
   },
   variants: {

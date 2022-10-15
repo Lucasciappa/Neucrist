@@ -2,9 +2,9 @@ import React from "react";
 import { Slide } from 'react-slideshow-image';
 
 const slideImages = [
-    '/images/neumaticos/neu1.jpg',
-    '/images/neumaticos/neumaticos.jpg',
-    '/images/neumaticos/neu5.jpg'
+    '/images/carousel/autopartes-carousel.png',
+    '/images/carousel/cristal-carousel.png',
+    '/images/carousel/neumaticos-carousel.png'
 ];
 
 const props = {
@@ -15,7 +15,7 @@ const props = {
 const HeroImage = () => {
     return (
         <div className="max-w-screen-2xl p-4 md:px-8 mx-auto z-20">
-            <section className="flex justify-center items-center flex-1  max-w-screen-2xl shrink-0 bg-gray-100 overflow-hidden shadow-lg rounded-lg relative h-96 xl:h-112 2xl:h-128">
+            <section className="flex justify-center items-center flex-1 max-w-screen-2xl shrink-0 font-primary bg-gray-100 overflow-hidden shadow-lg rounded-lg relative h-96 xl:h-112 2xl:h-128">
                 <div className="absolute inset-0 h-auto">
                     <Slide easing="ease" {...props} className="w-full">
                         <div className="each-slide">
@@ -41,7 +41,7 @@ const HeroImage = () => {
                     <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-5 md:mb-8">Neucrist</h1>
 
                     <div className="w-full flex flex-col sm:flex-row sm:justify-center gap-2.5">
-                        <a href="#contacto" className="inline-block bg-primary-red hover:bg-primary-red-hover active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contáctame</a>
+                        <a href="#contacto" className="inline-block bg-primary-red hover:bg-primary-red-hover active:bg-primary-red-hover focus-visible:ring ring-primary-red-hover text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">Contactame</a>
                     </div>
                 </div>
             </section>
