@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 pt-4 lg:pt-12 mb-16 font-primary">
           <div className="col-span-full lg:col-span-2">
 
-            <p className="text-gray-400 sm:pr-8 mb-2">Queremos tener la mejor confianza hacia el cliente, por eso te invitamos a conectar</p>
+            {/* <p className="text-gray-400 sm:pr-8 mb-2">Queremos tener la mejor confianza hacia el cliente, por eso te invitamos a conectar</p> */}
             <h4 className="text-xl font-semibold text-gray-300">Somos Neucrist</h4>
 
             {/* <!-- social - start --> */}
