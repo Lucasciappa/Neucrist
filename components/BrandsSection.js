@@ -5,7 +5,7 @@ const BrandsSection = () => {
     return (
         <>
             {/* <!-- logo cloud - start --> */}
-            <section className="pt-28 -mb-20">
+            <section className="pt-36 -mb-24">
                 <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
                     <h2 className="text-gray-800 text-3xl font-bold text-center mb-8">Marcas que confían</h2>
 

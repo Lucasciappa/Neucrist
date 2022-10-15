@@ -4,7 +4,7 @@ const FeaturesSection = () => {
   return (
     <>
       {/* <!-- features - start --> */}
-      <section className="pt-32 -mb-20 font-primary" id="servicios">
+      <section className="pt-36 -mb-24 font-primary" id="servicios">
         <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
           {/* <!-- text - start --> */}
           <div className="mb-10 md:mb-4">

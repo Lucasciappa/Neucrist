@@ -63,10 +63,6 @@ const Footer = () => {
                 <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Sobre Nosotros</a>
               </div>
 
-              <div>
-                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Prensa</a>
-              </div>
-
             </nav>
           </div>
           {/* <!-- nav - end --> */}
@@ -87,20 +83,6 @@ const Footer = () => {
           </div>
           {/* <!-- nav - end --> */}
 
-          {/* <!-- nav - start --> */}
-          <div>
-            <div className="text-gray-100 font-bold tracking-widest uppercase mb-4">Legal</div>
-
-            <nav className="flex flex-col gap-4">
-              <div>
-                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Terminos y Servicios</a>
-              </div>
-
-              <div>
-                <a href="#" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Politica de Privacidad</a>
-              </div>
-            </nav>
-          </div>
           {/*  <!-- nav - end --> */}
         </div>
 
@@ -117,7 +99,7 @@ const Footer = () => {
           </form>
         </div>
 
-        <div className="text-gray-400 text-sm text-center py-8">Copyright © 2022 LyC Creative.</div>
+        <div className="text-gray-400 text-sm text-center py-8">Copyright © 2022 Shiva Web Builders.</div>
       </footer>
     </div>
   );

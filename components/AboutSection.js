@@ -6,7 +6,7 @@ const AboutSection = () => {
     return (
         <>
             {/* about  */}
-            <section className='pt-28 -mb-20' id="about">
+            <section className='pt-36 -mb-24' id="about">
                 <h2 className="text-gray-800 text-4xl font-primary font-bold text-center my-6">Sobre Nosotros</h2>
                 <div className="container font-primary mx-auto p-10 flex flex-col lg:flex-row items-center gap-4 max-w-6xl bg-gray-100" >
                     <div className="relative">

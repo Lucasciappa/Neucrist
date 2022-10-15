@@ -5,7 +5,7 @@ import { ContactForm } from './ContactForm';
 const ContactSection = () => {
 
     return (
-        <div className="pt-28" id="contacto">
+        <div className="pt-36" id="contacto">
 
             {/* <!-- form - start --> */}
             <div className="max-w-screen-2xl font-primary bg-primary-red-light p-4 md:px-8 mx-auto">
