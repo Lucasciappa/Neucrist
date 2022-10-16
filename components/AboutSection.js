@@ -6,7 +6,7 @@ const AboutSection = () => {
     return (
         <>
             {/* about  */}
-            <section className='pt-36 -mb-24' id="about">
+            <section className='pt-28 -mb-20 mx-4' id="about">
                 <h2 className="text-gray-800 text-4xl font-primary font-bold text-center my-6">Sobre Nosotros</h2>
                 <div className="container font-primary mx-auto p-10 flex flex-col lg:flex-row items-center gap-4 max-w-6xl bg-gray-100" >
                     <div className="relative">
@@ -25,20 +25,20 @@ const AboutSection = () => {
                             con el compromiso de hacer las cosas bien desde el comienzo y
                             siempre.
                         </p>
-                        <p className="text-primary-black">Por eso y para ello las personas que componen NEUCRIST
-                            comparten la pasion, vision y el deseo de satisfacer las
+                        <p className="text-primary-black">Por eso y para ello las personas que componen <span className='font-secondary tracking-widest'>NEUCRIST</span>
+                            comparten la pasión, visión y el deseo de satisfacer las
                             necesidades de los clientes.
 
                         </p>
                         <p className="text-primary-black">
-                            A traves de un servicio diferencial,
+                            A través de un servicio diferencial,
                             con productos de alta calidad, avalados por marcas prestigiosas y
-                            servicio de logistica propia.
+                            servicio de logística propia.
                         </p>
                         <p className="text-primary-black">
-                            Te invitamos a ponerte en contacto con nosotros o bien a traves
-                            de nuestras redes sociales, telefono, o lo que sea
-                            mas comodo para ti.
+                            Te invitamos a ponerte en contacto con nosotros o bien a través
+                            de nuestras redes sociales, teléfono, o lo que sea
+                            mas cómodo para ti.
                         </p>
                     </div>
                     

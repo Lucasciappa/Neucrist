@@ -8,7 +8,7 @@ const Header = () => {
   const desc = "Los mejores neumaticos que puedes encontrar en el mercado";
   const ogImgRelativePath = "/og.png";
 
-  const siteURL = "https://neucrist.com";
+  const siteURL = "https://neucrist.com.ar";
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;

@@ -4,7 +4,7 @@ const FeaturesSection = () => {
   return (
     <>
       {/* <!-- features - start --> */}
-      <section className="pt-36 -mb-24 font-primary" id="servicios">
+      <section className="pt-32 -mb-20 font-primary" id="servicios">
         <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
           {/* <!-- text - start --> */}
           <div className="mb-10 md:mb-4">
@@ -13,8 +13,8 @@ const FeaturesSection = () => {
             </h2>
 
             <p className="max-w-screen-md text-primary-black md:text-lg text-center mx-auto">
-            Llegamos con la fuerza eminente de ser una empresa joven para competir y estar a la vanguardia, te brindamos la mejor experiencia. 
-            Trabajamos con dedicacion y conocimientos en el rubro de Cristales/ Neumaticos y Autopartes. {" "}
+            Llegamos con la fuerza de ser una empresa jóven para competir y estar a la vanguardia, te brindamos la mejor experiencia. 
+            Trabajamos con dedicación y conocimientos en el rubro de Cristales/ Neumáticos y Autopartes. {" "}
             </p>
           </div>
           {/* <!-- text - end --> */}
@@ -71,12 +71,11 @@ const FeaturesSection = () => {
 
               <div>
                 <h3 className="text-lg md:text-xl font-semibold mb-2">
-                  Cotizacion en linea
+                  Cotización en linea
                 </h3>
                 <p className="text-primary-black mb-2">
-                  Presentamos una manera facil de garantizar precios,
-                  favoreciendo, a su vez, la difusion de presupuestos y compras
-                  en su negocio.
+                  Presentamos una manera fácil de garantizar precios,
+                  de acuerdo a sus necesidades.
                 </p>
               </div>
             </div>
@@ -107,9 +106,8 @@ const FeaturesSection = () => {
                   Colocaciones y Arreglos
                 </h3>
                 <p className="text-primary-black mb-2">
-                  Gracias a nuestros expertos realizamos cambio de parabrisas,
-                  polarizados y neumaticos en el momento para que puedas volver
-                  al ruedo en el momento deseado.
+                Nuestros expertos realizan cambio de parabrisas, 
+                polarizados y neumáticos en el momento para que puedas volver al ruedo en el momento deseado.
                 </p>
               </div>
             </div>
@@ -167,11 +165,10 @@ const FeaturesSection = () => {
 
               <div>
                 <h3 className="text-lg md:text-xl font-semibold mb-2">
-                  Logistica
+                  Logística
                 </h3>
                 <p className="text-primary-black mb-2">
-                  Nos comprometemos a un servicio de logistica propia para
-                  garantizar entregas eficaces y sin problemas.
+                Nos comprometemos a un servicio de logística propia para garantizar entregas eficaces y sin problemas.
                 </p>
               </div>
             </div>
@@ -203,8 +200,8 @@ const FeaturesSection = () => {
                   Asesoramiento
                 </h3>
                 <p className="text-primary-black mb-2">
-                  Recibimos tu contacto e informacion a traves de nuestro
-                  Whatsapp para que podamos ayudarte de la manera mas rapida y
+                  Recibimos tu contacto e información a través de nuestro 
+                  Whatsapp para que podamos ayudarte de la manera mas rápida y 
                   eficiente.
                 </p>
               </div>

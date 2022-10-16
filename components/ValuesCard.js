@@ -5,7 +5,7 @@ const ValuesCard = () => {
     return (
         <>
             <section className="mx-auto pt-28 -mb-20">
-                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto font-primary">
+                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto font-primary px-5">
                     <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
                         <div className="flex justify-center items-center">
 
@@ -17,10 +17,10 @@ const ValuesCard = () => {
                             />
                         </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12">
-                            Pasion
+                            Pasión
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center ">
-                            Queremos transmitirte nuestro entusiasmo y conocimiento para que vivas de la misma forma que nosotros la pasion que tenemos por este rubro.
+                            Queremos transmitirte nuestro entusiasmo y conocimiento para que vivas de la misma forma que nosotros la pasión que tenemos por este rubro.
                         </p>
                     </article>
 
@@ -34,10 +34,10 @@ const ValuesCard = () => {
                             />
                         </div>
                         <h2 className="text-center text-2xl font-bold min-h-18 px-12 mt-5">
-                            Vision
+                            Visión
                         </h2>
                         <p className="m-4 text-lg p-4 leading-relaxed text-center">
-                            Nuestro objetivo es innovar dia a dia para poder brindarte la mejor experiencia.
+                            Nuestro objetivo es innovar día a día para poder brindarte la mejor experiencia.
                         </p>
                     </article>
 

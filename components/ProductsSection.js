@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProductsSection = () => {
   return (
-    <section className="pt-36 -mb-24 font-primary" id="productos">
+    <section className="pt-32 -mb-20 font-primary" id="productos">
       <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <h2 className="text-gray-800 text-4xl font-bold text-center my-4">
           Productos
@@ -62,7 +62,7 @@ const ProductsSection = () => {
 
                 <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">
                   Amplia variedad de parabrisas, lunetas, laterales. Todas las
-                  marcas, nacionales e importados y originales de fabrica.
+                  marcas, nacionales e importados y originales de fábrica.
                   Favicur, Cristem y Pilkington
                 </p>
               </div>
@@ -97,11 +97,11 @@ const ProductsSection = () => {
             <div className="flex flex-wrap justify-between mb-4">
               <div className="w-full lg:w-1/3 flex flex-col justify-center lg:pt-28 lg:pb-24 mb-6 sm:mb-12 lg:mb-0">
                 <h6 className="text-primary-white text-3xl md:text-5xl font-bold mb-4 md:mb-8">
-                  Neumaticos
+                  Neumáticos
                 </h6>
 
                 <p className="max-w-md text-primary-white xl:text-lg leading-relaxed">
-                  Amplia variedad de neumaticos, todas las marcas y modelos
+                  Amplia variedad de neumáticos, todas las marcas y modelos.
                   Trabajamos con marcas nacionales e importadas.
                 </p>
               </div>

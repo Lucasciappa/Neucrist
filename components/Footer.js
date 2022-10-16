@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="col-span-full lg:col-span-2">
 
             {/* <p className="text-gray-400 sm:pr-8 mb-2">Queremos tener la mejor confianza hacia el cliente, por eso te invitamos a conectar</p> */}
-            <h4 className="text-xl font-semibold text-gray-300">Somos Neucrist</h4>
+            <h4 className="text-xl font-semibold text-gray-300">Somos <span className="font-secondary tracking-widest">Neucrist</span></h4>
 
             {/* <!-- social - start --> */}
             {/* <div className="flex gap-4">
@@ -44,7 +44,7 @@ const Footer = () => {
 
             <nav className="flex flex-col gap-4">
               <div>
-                <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Vision</a>
+                <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Visión</a>
               </div>
 
               <div>
@@ -56,13 +56,12 @@ const Footer = () => {
 
           {/* <!-- nav - start --> */}
           <div>
-            <div className="text-gray-100 font-bold tracking-widest uppercase mb-4">Compania</div>
+            <div className="text-gray-100 font-bold tracking-widest uppercase mb-4">Compañía</div>
 
             <nav className="flex flex-col gap-4">
               <div>
                 <a href="#about" className="text-gray-400 hover:text-primary-red active:text-primary-red-hover transition duration-100">Sobre Nosotros</a>
               </div>
-
             </nav>
           </div>
           {/* <!-- nav - end --> */}
@@ -82,8 +81,6 @@ const Footer = () => {
             </nav>
           </div>
           {/* <!-- nav - end --> */}
-
-          {/*  <!-- nav - end --> */}
         </div>
 
         <div className="flex flex-col md:flex-row justify-evenly xl:justify-center items-center gap-2 xl:gap-6">
