@@ -11,7 +11,7 @@ const BrandsSection = () => {
 
                     <div className="xs:h-40 grid grid-cols-2 md:grid-cols-4 sm:content-evenly bg-gray-100 rounded-lg gap-6 p-6">
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/bf-goodrich.png'
                                 alt="Bf-goodrich Brand"
@@ -22,7 +22,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/continental.png'
                                 alt="Continental Brand"
@@ -33,7 +33,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/dunlop.png'
                                 alt="Dunlop Brand"
@@ -44,7 +44,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/goodyear.png'
                                 alt="Goodyear Brand"
@@ -55,7 +55,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/bridgestone.png'
                                 alt="Bridgestone Brand"
@@ -66,7 +66,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/firestone.png'
                                 alt="Firestone Brand"
@@ -77,7 +77,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/michelin.png'
                                 alt="Michelin Brand"
@@ -88,7 +88,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/pirelli.png'
                                 alt="Pirelli Brand"
@@ -99,7 +99,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/pilkington.png'
                                 alt="Pilkington Brand"
@@ -110,7 +110,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/saint-gobain.png'
                                 alt="Saint-gobain Brand"
@@ -121,7 +121,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
                         
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/yokohama.png'
                                 alt="Yokohama Brand"
@@ -132,7 +132,7 @@ const BrandsSection = () => {
                         {/* <!-- logo - end --> */}
 
                         {/* <!-- logo - start --> */}
-                        <div className="flex justify-center text-gray-400">
+                        <div className="flex justify-center text-gray-400 md:px-8">
                             <Image
                                 src='/marcas/fate.png'
                                 alt="Fate Brand"

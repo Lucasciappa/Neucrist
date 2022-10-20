@@ -25,7 +25,7 @@ const AboutSection = () => {
                             con el compromiso de hacer las cosas bien desde el comienzo y
                             siempre.
                         </p>
-                        <p className="text-primary-black">Por eso y para ello las personas que componen <span className='font-secondary tracking-widest'>NEUCRIST</span>
+                        <p className="text-primary-black">Por eso y para ello las personas que componen <span className='font-secondary tracking-widest text-sm px-1'>NEUCRIST</span>
                             comparten la pasión, visión y el deseo de satisfacer las
                             necesidades de los clientes.
 
