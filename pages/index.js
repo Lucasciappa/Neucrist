@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import AboutSection from '../components/AboutSection';
 import BrandsSection from '../components/BrandsSection';
 import ContactSection from '../components/ContactSection';
@@ -12,6 +13,14 @@ const IndexPage = () => {
     return (
         <>
             <Header />
+            
+            <Head>
+                <meta name="viewport" content="viewport-fit=cover" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+                <link rel="shortcut icon" href="/favicon.svg" />
+            </Head>
+            
             <Layout>
                 <HeroImage />
                 <SmallCards />

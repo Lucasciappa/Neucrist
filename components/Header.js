@@ -47,16 +47,6 @@ const Header = () => {
           content: title,
         },
       ]}
-      additionalLinkTags={[
-        {
-          rel: "icon",
-          href: `${siteURL}/favicon.ico`,
-        },
-        // {
-        //   rel: "manifest",
-        //   href: "/site.manifest",
-        // },
-      ]}
     />
   );
 }
