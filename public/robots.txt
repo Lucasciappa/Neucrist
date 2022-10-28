@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /disallowed
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://neucrist.com.ar
+
+# Sitemaps
+Sitemap: https://neucrist.com.ar/sitemap.xml
