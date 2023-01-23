@@ -1,5 +1,6 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
+import Image  from 'next/image'; 
 
 
 const Header = () => {
@@ -27,12 +28,20 @@ const Header = () => {
         title,
         description: desc,
         images: [
-          {
-            url: ogImageURL,
-            width: 1200,
-            height: 630,
-            alt: "Neucrist | encontra lo mejor del mercado de neumaticos",
-          },
+          
+            <Image 
+              src = {ogImageURL}
+              width = {1200}
+              height = {630}
+              alt = "Neucrist | encontra lo mejor del mercado de neumaticos, parabrisas y autopartes"
+            />
+            // {
+            // url: ogImageURL,
+            // width: 1200,
+            // height: 630,
+            // alt: "Neucrist | encontra lo mejor del mercado de neumaticos",
+            // },
+          
         ],
         site_name: siteName,
       }}

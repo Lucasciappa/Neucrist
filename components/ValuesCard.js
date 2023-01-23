@@ -1,12 +1,55 @@
 import React from "react";
-import Image from 'next/image'
+import Image from "next/image";
+import ValueCard from "./ValueCard";
 
 const ValuesCard = () => {
-    return (
-        <>
-            <section className="mx-auto pt-28 -mb-20">
-                <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto font-primary px-5">
-                    <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
+  const infoValuesCards = [
+    {
+      id: 1,  
+      image: "/images/transparentes/corazon.png",
+      title: "Pasión",
+      alt: "Pasion",
+      desc: "Queremos transmitirte nuestro entusiasmo y conocimiento para que vivas de la misma forma que nosotros la pasión que tenemos por este rubro.",
+    },
+    {
+      id: 2,
+      image: "/images/transparentes/vision.png",
+      title: "Visión",
+      alt: "Visión",
+      desc: "Nuestro objetivo es innovar día a día para poder brindarte la mejor experiencia.",
+    },
+    {
+      id: 3,
+      image: "/images/transparentes/calidad.png",
+      title: "Productos de alta calidad",
+      alt: "Productos de alta calidad",
+      desc: "Nos aliamos con las principales marcas del mundo para asegurar la mejor calidad del mercado.",
+    },
+    {
+      id: 4,
+      image: "/images/transparentes/logistica.png",
+      title: "Trabajo en equipo",
+      alt: "Trabajo en equipo",
+      desc: "Gracias a las personas que integran esta empresa y su trabajo en conjunto, es que somos capaces de evolucionar todos los dias para entregar nada mas que excelencia a nuestros clientes.",
+    },
+  ];
+
+  return (
+    <>
+      <section className="mx-auto pt-28 -mb-20">
+        <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 xl:px-6 max-w-2xl lg:max-w-3xl xl:max-w-7xl mx-auto font-primary px-5">
+          {infoValuesCards.map((data, i) => {
+            return <ValueCard key={i} {...data} />;
+          })}
+        </section>
+      </section>
+    </>
+  );
+};
+
+export default ValuesCard;
+{
+  /* <article className="mx-auto max-w-sm bg-white bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl hover:shadow-shadow-top">
                         <div className="flex justify-center items-center">
 
                             <Image
@@ -76,11 +119,5 @@ const ValuesCard = () => {
                         <p className="m-4 text-lg p-4 leading-relaxed text-center ">
                             Gracias a las personas que integran esta empresa y su trabajo en conjunto, es que somos capaces de evolucionar todos los dias para entregar nada mas que excelencia a nuestros clientes.
                         </p>
-                    </article>
-                </section>
-            </section>
-        </>
-    )
+                    </article> */
 }
-
-export default ValuesCard;
